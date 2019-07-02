@@ -1,0 +1,29 @@
+export class Prueba3 {
+    pregunta1: string;
+    pregunta2: string;
+    pregunta3: string;
+    pregunta4: string;
+    pregunta5: string;
+    pregunta6: string;
+    pregunta7: string;
+    pregunta8: string;
+    pregunta9: string;
+    pregunta10: string;
+    pregunta11: string;
+    pregunta12: string;
+    pregunta13: string;
+    pregunta14: string;
+    pregunta15: string;
+    vyf1: string;
+    vyf2: string;
+    vyf3: string;
+    vyf4: string;
+    vyf5: string;
+    vyf6: string;
+    vyf7: string;
+    vyf8: string;
+    vyf9: string;
+    vyf10: string;
+    vyf11: string;
+    rut: string;
+}

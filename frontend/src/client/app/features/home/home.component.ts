@@ -5,6 +5,7 @@ import { tap } from 'rxjs/operators/tap';
 import { HttpResponse } from '@angular/common/http';
 import { Route, Router } from '@angular/router';
 import { rutYPerfil } from '../../classes/rutyperfil';
+import { ServicioRutService } from '../../services/servicioRut/servicioRut.service';
 
 /**
 * This class represents the main application component.
@@ -18,25 +19,40 @@ import { rutYPerfil } from '../../classes/rutyperfil';
 export class HomeComponent {
     /* CONSTRUCTOR */
     private rut: string;
-    constructor(private rest: RestService, private router: Router) {
-        
-        // Constructor code
+    private rutValido: boolean;
+    private anioEgreso: string;
+    constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) {
+
+        this.rutValido = false;
     }
 
     public ingresar() {
-        this.router.navigate(['landing']);
         this.retornoIngresar().subscribe((response: HttpResponse<any>) => {
-            
-        })        
+
+        })
     }
     public retornoIngresar(): Observable<HttpResponse<any>> {
-        const api= '/tesis/insertaRut';
+        const api = '/tesis/verificaRut';
         let ryp = new rutYPerfil();
-        ryp.rut =  this.rut;
+        ryp.rut = this.rut;
         return this.rest.post(api, ryp).pipe(
             tap((response: HttpResponse<any>) => {
                 if (response.status !== 200 && response.status !== 204) {
                     throw new Error(response.status.toString());
+                } else {
+                    if(response.body.id !== '0') {
+                        let rutPerfil = new rutYPerfil();
+                        rutPerfil.id = response.body.id;
+                        rutPerfil.rut = response.body.rut;
+                        this.servicioRut.seteaRutPerfil(rutPerfil);
+                        this.router.navigate(['perfil']);
+                        
+                    } else {
+                        let rutPerfil = new rutYPerfil();
+                        rutPerfil.rut = response.body.rut;
+                        this.servicioRut.seteaRutPerfil(rutPerfil);
+                        this.router.navigate(['landing']);
+                    }
                 }
             })
         );

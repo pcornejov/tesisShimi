@@ -64,4 +64,5 @@ export class Prueba1 {
     finanzasPregunta12: string;
     finanzasPregunta13: string;
     finanzasPregunta14: string;
+    rut: string;
 }

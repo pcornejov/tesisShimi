@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { PerfilesComponent } from './perfiles/perfiles.component';
+import { PerfilComponent } from './perfil/perfil.component';
 import { LandingComponent } from './landing/landing.component';
 import { Prueba5Component } from './prueba5/prueba5.component';
 import { Prueba4Component } from './prueba4/prueba4.component';
@@ -39,7 +39,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         Prueba4Component,
         Prueba5Component,
         LandingComponent,
-        PerfilesComponent
+        PerfilComponent
     ],
     exports: [
         CommonModule,
@@ -53,7 +53,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         Prueba4Component,
         Prueba5Component,
         LandingComponent,
-        PerfilesComponent
+        PerfilComponent
     ]
 
 })

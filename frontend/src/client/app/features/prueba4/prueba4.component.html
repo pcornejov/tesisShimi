@@ -1,737 +1,877 @@
+<h1>Primera Parte: Auditoría.</h1>
 <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°1
-        </div>
-        <div>
-            <p class="ppp">De acuerdo al artículo 22 del Código del Trabajo, la jornada laboral ordinaria no excederá
-                las 45 horas
-                semanales, exceptuando:</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta1" value="a">
-                <p class="ppp">Trabajadores que presten servicios a diferentes
-                    empleadores.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta1" value="b">
-                <p class="ppp">Gerentes, administradores, y apoderados con
-                    facultades de administración.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta1" value="c">
-                <p class="ppp">Vendedores viajantes, comisionistas, cobradores y
-                    todos aquellos trabajadores que no ejerzan sus
-                    funciones en el local o establecimiento, o aquellos que presten servicios dentro de naves
-                    pesqueras.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta1" value="d">
-                <p class="ppp">Todas las anteriores.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta1" value="e">
-                <p class="ppp">Ninguna de las anteriores puesto que un trabajador no
-                    puede, ni debe tener una mayor a 45 horas
-                    semanales.</p>
-            </div>
-        </div>
+    <div class="tituloPregunta">
+        Pregunta N°1
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°2
-        </div>
-        <div>
-            <p class="ppp">Con respecto a las horas extraordinarias (llamadas horas extras), es falso afirmar que:</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta2" value="a">
-                <p class="ppp">Pueden pactarse un máximo de 2 horas extraordinarias por día para cada trabajador.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta2" value="b">
-                <p class="ppp">
-                    Las horas extraordinarias pueden pactarse de manera indefinida.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta2" value="c">
-                <p class="ppp">Las horas extraordinarias se pagarán con un recargo del 50% sobre el sueldo convenido para la
-                    jornada ordinaria.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta2" value="d">
-                <p class="ppp">Las horas extraordinarias solo son pactadas para satisfacer necesidades temporales de la
-                    empresa.
-                </p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta2" value="e">
-                <p class="ppp">Ninguna de las anteriores.</p>
-            </div>
-        </div>
+    <div>
+        <p class="ppp">¿Cuáles son las principales cualidades y atributos del auditor?</p>
+        <p class="ppp">I. Suspicacia: duda científica que se deriva de la evidencia contable en examen, la cual, una vez
+            eliminada genera certeza, aceptación o cuestionamiento. </p>
+        <p class="ppp">II. Agilidad Mental: razonar rápidamente respecto de la extensión y profundidad del hecho
+            económico.</p>
+        <p class="ppp">III. Perseverancia: Firmeza en la búsqueda de la verdad.</p>
+        <p class="ppp">IV. Tolerancia: el auditor no debe juzgar a las personas ni a sus errores. </p>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°3
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta1" [(ngModel)]="pregunta1" value="a">
+            <p class="ppp">Solo I.</p>
         </div>
-        <div>
-            <p class="ppp">De las siguientes contraprestaciones en dinero, ¿cuál no corresponde a remuneración?</p>
+        <div class="items">
+            <input type="radio" name="pregunta1" [(ngModel)]="pregunta1" value="b">
+            <p class="ppp">Solo II.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta3" value="a">
-                <p class="ppp">
-                    Sobresueldo (correspondiente a horas extras).</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta3" value="b">
-                <p class="ppp">Prestaciones familiares asignadas por ley.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta3" value="c">
-                <p class="ppp">
-                    Participación, que es la proporción en las utilidades de un negocio determinado.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta3" value="d">
-                <p class="ppp">Comisión por ventas.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta3" value="e">
-                <p class="ppp">Todas corresponden a remuneraciones.</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta1" [(ngModel)]="pregunta1" value="c">
+            <p class="ppp">Solo I y II.</p>
         </div>
-    </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°4
+        <div class="items">
+            <input type="radio" name="pregunta1" [(ngModel)]="pregunta1" value="d">
+            <p class="ppp">Solo III y IV.</p>
         </div>
-        <div>
-            <p class="ppp">Lea la siguiente información y determine cuánto le corresponde al trabajador por concepto de
-                horas extras:</p>
-            <p class="ppp">El Señor Crisóstomo trabaja en una hortofrutícola de la comuna de Chillán, y presenta la
-                siguiente información en el mes de Octubre de 2018:</p>
-            <p class="ppp">Días Trabajados: 30</p>
-            <p class="ppp">Sueldo Base: $850.000</p>
-            <p class="ppp">Gratificación: 25%</p>
-            <p class="ppp">Bono de Producción: $30.000</p>
-            <p class="ppp">Bono de Locomoción: $30.000</p>
-            <p class="ppp">Horas Extras: 7</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta4" value="a">
-                <p class="ppp">$47.911.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta4" value="b">
-                <p class="ppp">$47.211.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta4" value="c">
-                <p class="ppp">$49.911.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta4" value="d">
-                <p class="ppp">$49.211.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta4" value="e">
-                <p class="ppp">$49.311.</p>
-            </div>
-        </div>
-    </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°5
-        </div>
-        <div>
-            <p class="ppp">En relación al periodo de vigencia de los contratos colectivos, es cierto afirmar que:</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta5" value="a">
-                <p class="ppp">
-                    El periodo mínimo de vigencia es de 2 años y máximo 3 años.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta5" value="b">
-                <p class="ppp">
-    
-                    El periodo de vigencia será estipulado por las partes, de acuerdo a la conformidad de los resultados.
-                </p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta5" value="c">
-                <p class="ppp">
-                    El periodo mínimo de vigencia es de seis meses y no cuenta con un máximo.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta5" value="d">
-                <p class="ppp">
-                    No existe periodo de vigencia para los contratos colectivos.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta5" value="e">
-                <p class="ppp">
-                    Ninguna de las anteriores.</p>
-            </div>
-        </div>
-    </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°6
-        </div>
-        <div>
-            <p class="ppp">Analice la siguiente situación:</p>
-            <p class="ppp">“Casa Villablanca es una tienda de ropa y accesorios importados desde Europa. Don Camilo
-                Subercaseaux, dueño de la empresa, cuenta con 55 trabajadores, los cuales han decidido formar un sindicato
-                para establecer algunos acuerdos colectivos necesarios para el bienestar de los colaboradores, entre los
-                cuales se destacan contar con baños diferenciados entre hombres y mujeres, aumentos de sueldos y pactar
-                horas extraordinarias correctamente distribuidas conforme al código del trabajo vigente. Don Camilo,
-                presenta gran interés en esta agrupación, y comienza a participar activamente de las decisiones tomadas
-                dentro de las asambleas, entregando información financiera que se le ha solicitado de manera informal,
-                puesto que los libros requeridos se encuentran en manos de un contador externo”.</p>
-            <p class="ppp">Son prácticas anti - sindicales:</p>
-            <p class="ppp">I. De parte del empleador, no otorgar servicios básicos para sus trabajadores.</p>
-            <p class="ppp">II. De parte de los trabajadores, solicitar información confidencial financiera de la empresa.
+        <div class="items">
+            <input type="radio" name="pregunta1" [(ngModel)]="pregunta1" value="e">
+            <p class="ppp">I – II – III – IV.
             </p>
-            <p class="ppp">III. De parte del empleador, participar en las asambleas y toma de decisiones del sindicato.</p>
-            <p class="ppp">IV. De parte del empleador, no entregar la información financiera requerida por el sindicato para
-                llevar crear un petitorio acorde a la situación actual de la empresa.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta6" value="a">
-                <p class="ppp">
-                    Solo I.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta6" value="b">
-                <p class="ppp">
-                    Solo II.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta6" value="c">
-                <p class="ppp">
-                    Solo III.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta6" value="d">
-                <p class="ppp">Solo III – IV.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta6" value="e">
-                <p class="ppp">I – II – III – IV.</p>
-            </div>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°7
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°2
+    </div>
+    <div>
+        <p class="ppp">Para establecer la estrategia global de la auditoría, como una de las principales actividades de
+            la planificación, el auditor debe:</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta2" [(ngModel)]="pregunta2" value="a">
+            <p class="ppp">Identificar las características del encargo. </p>
         </div>
-        <div>
-            <p class="ppp">Lea la siguiente situación:</p>
-            <p class="ppp">“Cervecería Calixto S.A. se encuentra en proceso de negociación colectiva con el sindicato de
-                trabajadores de la compañía. La empresa, cuenta con un instrumento vigente, el cual, los trabajadores
-                tomaron como piso de la negociación, sin embargo, la dirección, entrega como respuesta al petitorio, un piso
-                inferior al del contrato colectivo vigente, fundamentado en las bajas utilidades que han recibido por el
-                crecimiento de cervecerías artesanales que han surgido en la actualidad”.</p>
-            <p class="ppp">De acuerdo al enunciado, es correcto afirmar que:</p>
-            <p class="ppp">I. La empresa cuenta con la facultad de fijar el piso de negociación dependiendo de la situación
-                financiera en la que se encuentre.</p>
-            <p class="ppp">II. Según la última reforma laboral, el piso de inicio de negociación de fijarse de acuerdo al
-                último contrato colectivo vigente. En caso de no existir instrumento anterior, la respuesta del empleador
-                constituirá el piso de negociación. </p>
-            <p class="ppp">III. El piso de negociación siempre debe ser pactado por las partes, de acuerdo a la situación
-                financiera del periodo de la empresa, y a otros factores relevantes. </p>
+        <div class="items">
+            <input type="radio" name="pregunta2" [(ngModel)]="pregunta2" value="b">
+            <p class="ppp">Determinar los objetivos del encargo en relación con los informes a emitir, con el fin de
+                planificar el momento de realización de una auditoría.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta7" value="a">
-                <p class="ppp">
-                    Solo I.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta7" value="b">
-                <p class="ppp">
-                    Solo II.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta7" value="c">
-                <p class="ppp">
-                    Solo III.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta7" value="d">
-                <p class="ppp">I – II – III.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta7" value="e">
-                <p class="ppp">
-                    Ninguna de las anteriores. </p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta2" [(ngModel)]="pregunta2" value="c">
+            <p class="ppp">Considerar los factores que, a juicio profesional del auditor, sean significativos para la
+                dirección de las tareas del equipo a cargo.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta2" [(ngModel)]="pregunta2" value="d">
+            <p class="ppp">Determinar la naturaleza, el momento del empleo, y la extensión de los recursos necesarios
+                para llevar a cabo la realización del encargo.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta2" [(ngModel)]="pregunta2" value="e">
+            <p class="ppp">Todas las anteriores.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°8
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°3
+    </div>
+    <div>
+        <p class="ppp">El plan de auditoría, debe incluir la descripción de las siguientes actividades:</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta3" [(ngModel)]="pregunta3" value="a">
+            <p class="ppp">La naturaleza, el momento de realización y la extensión de los procedimientos planificados
+                para la valoración del riesgo.</p>
         </div>
-        <div>
-            <p class="ppp">¿Cuál es la diferencia entre evasión y elusión fiscal?</p>
-            <p class="ppp">I. La elusión fiscal tiene como objetivo pagar la menor cantidad de impuestos dentro de los
-                límites que establece la ley, incluso utilizando algunas lagunas legales en la legislación, mientras que la
-                evasión fiscal consiste en evitar el pago de la mayor parte o de la totalidad de los impuestos a través de
-                prácticas ilegales. </p>
-            <p class="ppp">II. La evasión fiscal tiene como objetivo pagar la menor cantidad de impuestos dentro de los
-                límites que establece la ley, incluso utilizando algunas lagunas legales en la legislación, mientras que la
-                elusión fiscal consiste en evitar el pago de la mayor parte o de la totalidad de los impuestos a través de
-                prácticas ilegales.</p>
-            <p class="ppp">III. La elusión está dentro de los parámetros éticos mientras que la evasión no lo está.</p>
-            <p class="ppp">IV. Ninguna de las dos prácticas son éticas.</p>
+        <div class="items">
+            <input type="radio" name="pregunta3" [(ngModel)]="pregunta3" value="b">
+            <p class="ppp">La naturaleza, el momento de realización y la extensión de los procedimientos de auditoría
+                posteriormente planificados relativos a las afirmaciones. </p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta8" value="a">
-                <p class="ppp">
-                    Solo I.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta8" value="b">
-                <p class="ppp">
-                    Solo II.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta8" value="c">
-                <p class="ppp">Solo I – IV.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta8" value="d">
-                <p class="ppp">Solo I – III – IV.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta8" value="e">
-                <p class="ppp">Solo II – III – IV.</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta3" [(ngModel)]="pregunta3" value="c">
+            <p class="ppp">Otros procedimientos de auditoría planificados cuya realización se requiere para que el
+                encargo se desarrolle conforme a las NIA´s.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta3" [(ngModel)]="pregunta3" value="d">
+            <p class="ppp">Todas las anteriores. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta3" [(ngModel)]="pregunta3" value="e">
+            <p class="ppp">Ninguna de las anteriores.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°9
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°4
+    </div>
+    <div>
+        <p class="ppp">¿Qué documentación debe incluir la planificación de auditoría?</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta4" [(ngModel)]="pregunta4" value="a">
+            <p class="ppp">Estrategia global de auditoría.</p>
         </div>
-        <div>
-            <p class="ppp">En las siguientes situaciones, el IVA se devenga:</p>
+        <div class="items">
+            <input type="radio" name="pregunta4" [(ngModel)]="pregunta4" value="b">
+            <p class="ppp">Plan de Auditoría. </p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta9" value="a">
-                <p class="ppp">
-                    En el caso de servicios periódicos, en la fecha en que se celebra el contrato.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta9" value="b">
-                <p class="ppp">
-                    Cuando se realiza venta, se devenga siempre en el momento en que se emite la factura.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta9" value="c">
-                <p class="ppp">
-                    En las importaciones, al momento de la realización del pago al proveedor extranjero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta9" value="d">
-                <p class="ppp">
-                    En el caso en que se retira mercadería, en la misma fecha en que se retira el bien.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta9" value="e">
-                <p class="ppp">
-                    Solo b) y d).</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta4" [(ngModel)]="pregunta4" value="c">
+            <p class="ppp">Especificación de cambios significativos que se realicen en la planificación de auditoría,
+                con sus respectivos motivos.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta4" [(ngModel)]="pregunta4" value="d">
+            <p class="ppp">Todas las anteriores. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta4" [(ngModel)]="pregunta4" value="e">
+            <p class="ppp">Solo A) y C).
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°10
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°5
+    </div>
+    <div>
+        <p class="ppp">En la auditoría de Estados Financieros, son objetivos globales del auditor:</p>
+        <p class="ppp">I. La obtención de seguridad razonable de que los estados financieros en su conjunto se
+            encuentran libres de incorrección material, debida a fraude o error. </p>
+        <p class="ppp">II. Emisión de un informe sobre los estados financieros y el cumplimiento de los requerimientos
+            de comunicación contenidos en la NIA’s.</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta5" [(ngModel)]="pregunta5" value="a">
+            <p class="ppp">Solo I.</p>
         </div>
-        <div>
-            <p class="ppp">Con respecto a los retiros de mercadería, es correcto afirmar que:</p>
+        <div class="items">
+            <input type="radio" name="pregunta5" [(ngModel)]="pregunta5" value="b">
+            <p class="ppp">Solo II.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta10" value="a">
-                <p class="ppp">Son gravadas con el impuesto IVA.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta10" value="b">
-                <p class="ppp">Están exentos de IVA, cuando son retiros efectuados por los dueños de las empresas.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta10" value="c">
-                <p class="ppp">
-                    Cuando son efectuados por un vendedor para el consumo de su familia, son hechos gravados.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta10" value="d">
-                <p class="ppp">
-                    Solo a) y c).</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta10" value="e">
-                <p class="ppp">Todas las anteriores.</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta5" [(ngModel)]="pregunta5" value="c">
+            <p class="ppp">A) y B) de manera incluyente.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta5" [(ngModel)]="pregunta5" value="d">
+            <p class="ppp">A) y B) de manera excluyente. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta5" [(ngModel)]="pregunta5" value="e">
+            <p class="ppp">Ninguna de las anteriores.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°11
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°6
+    </div>
+    <div>
+        <p class="ppp">La correcta definición de “Evidencia de Auditoría” según la NIA 200, corresponde a:</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta6" [(ngModel)]="pregunta6" value="a">
+            <p class="ppp">Documentación contenida en los archivos de la empresa para realizar la auditoría</p>
         </div>
-        <div>
-            <p class="ppp">Una sociedad de personas, dueña de una panadería, vende una amasadora que adquirió hace dos años.
-                Esta operación:</p>
+        <div class="items">
+            <input type="radio" name="pregunta6" [(ngModel)]="pregunta6" value="b">
+            <p class="ppp">Información contenida en el sistema contable de la empresa para generar la opinión final.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta11" value="a">
-                <p class="ppp">Esta afecta a IVA solo si el comprador tiene calidad de vendedor de maquinarias similares.
-                </p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta11" value="b">
-                <p class="ppp">Bajo toda circunstancia está afecto a IVA.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta11" value="c">
-                <p class="ppp">Es un hecho gravado especial.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta11" value="d">
-                <p class="ppp">
-                    Ex un hecho exento de IVA.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta11" value="e">
-                <p class="ppp">Falta información. </p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta6" [(ngModel)]="pregunta6" value="c">
+            <p class="ppp">Información utilizada por el auditor para alcanzar las conclusiones en las que se basa su
+                opinión. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta6" [(ngModel)]="pregunta6" value="d">
+            <p class="ppp">Información recopilada por el auditor y la empresa para realizar el proceso de auditoría.
+            </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta6" [(ngModel)]="pregunta6" value="e">
+            <p class="ppp">Documentación que la empresa entrega al auditor para planificar la auditoría.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°12
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta 7.
+    </div>
+    <div>
+        <p class="ppp">Analice las siguientes situaciones y determine el tipo de riesgo de auditoria que se presenta.
+        </p>
+    </div>
+    <div>
+        <p class="ppp">Existe una doble facturación que no fue corregida, que trae como principal consecuencia la
+            presentación errónea del nivel de ingresos en el estado de resultados. </p>
+    </div>
+    <div class="items">
+        <input type="radio" name="riesgo1" [(ngModel)]="riesgo1" value="RI">
+        <p class="ppp">Riesgo Inherente.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="riesgo1" [(ngModel)]="riesgo1" value="RC">
+        <p class="ppp">Riesgo de Control.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="riesgo1" [(ngModel)]="riesgo1" value="RD">
+        <p class="ppp">Riesgo de Detección.</p>
+    </div>
+    <div>
+        <p class="ppp">Durante un proceso de auditoría no se detectan fraudes, sin embargo, esto si están siendo
+            efectuados. </p>
+    </div>
+    <div class="items">
+        <input type="radio" name="riesgo2" [(ngModel)]="riesgo2" value="RI">
+        <p class="ppp">Riesgo Inherente.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="riesgo2" [(ngModel)]="riesgo2" value="RC">
+        <p class="ppp">Riesgo de Control.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="riesgo2" [(ngModel)]="riesgo2" value="RD">
+        <p class="ppp">Riesgo de Detección.</p>
+    </div>
+    <div>
+        <p class="ppp">Unos alumnos intentan ingresar al sistema informático de la universidad donde estudian para
+            cambiar las calificaciones obtenidas en una asignatura determinada. </p>
+    </div>
+    <div class="items">
+        <input type="radio" name="riesgo3" [(ngModel)]="riesgo3" value="RI">
+        <p class="ppp">Riesgo Inherente.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="riesgo3" [(ngModel)]="riesgo3" value="RC">
+        <p class="ppp">Riesgo de Control.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="riesgo3" [(ngModel)]="riesgo3" value="RD">
+        <p class="ppp">Riesgo de Detección.</p>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°8
+    </div>
+    <div>
+        <p class="ppp">¿En cuál de los siguientes casos se puede observar mayor riesgo de auditoría?</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta8" [(ngModel)]="pregunta8" value="a">
+            <p class="ppp">El auditor no cuenta con conocimientos técnicos suficientes para auditar la empresa que se le
+                asigna. </p>
         </div>
-        <div>
-            <p class="ppp">Una empresa de deportes, dona 500 pelotas de futbol sin fines de lucro a una fundación infantil.
-                El principal fin de esta donación es la de hacer publicidad.</p>
-            <p class="ppp">Con respecto al impuesto al valor agregado, esta operación es:</p>
+        <div class="items">
+            <input type="radio" name="pregunta8" [(ngModel)]="pregunta8" value="b">
+            <p class="ppp">Cuando existen incorrecciones, como diferencias en las cantidades registradas,
+                clasificaciones de cuentas o información revelada (voluntarias o involuntarias) que lleve al auditor a
+                expresar una opinión inadecuada.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta12" value="a">
-                <p class="ppp">Un hecho gravado de venta.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta12" value="b">
-                <p class="ppp">
-                    Un hecho gravado especial.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta12" value="c">
-                <p class="ppp">Una operación no gravada.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta12" value="d">
-                <p class="ppp">Una operación gravada pero exenta de IVA.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta12" value="e">
-                <p class="ppp">Ninguna de las anteriores.</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta8" [(ngModel)]="pregunta8" value="c">
+            <p class="ppp">La empresa no entrega la información requerida por el auditor, debiendo formular su opinión
+                con escasez de evidencia.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta8" [(ngModel)]="pregunta8" value="d">
+            <p class="ppp">El auditor no es escéptico, y cree mayormente en la evidencia entregada por la empresa. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta8" [(ngModel)]="pregunta8" value="e">
+            <p class="ppp">Solo B y C.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°13
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°9
+    </div>
+    <div>
+        <p class="ppp">Analice el rol del auditor en la siguiente situación:</p>
+        <p class="ppp">“‘Sociedad Marketing Luz’, es una empresa publicitaria que presta servicios a clientes tanto en
+            el extranjero como dentro del país. Llegado el momento de realizar el proceso de auditoría, el comité
+            directivo designa al sr. Lucas Montero, como experto (y miembro de la dirección) en preparar y reunir toda
+            la información requerida por el auditor”.</p>
+        <p class="ppp">En este caso, el auditor debe:</p>
+        <p class="ppp">I. Evaluar la competencia, capacidad y objetividad del experto.</p>
+        <p class="ppp">II. Obtener conocimientos de del trabajo del experto.</p>
+        <p class="ppp">III. Evaluar la adecuación del trabajo del experto como evidencia de auditoría, en relación con
+            la afirmación correspondiente. </p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta9" [(ngModel)]="pregunta9" value="a">
+            <p class="ppp">Solo I – II. </p>
         </div>
-        <div>
-            <p class="ppp">¿Cuáles son las perspectivas de un hecho gravado básico de venta?</p>
+        <div class="items">
+            <input type="radio" name="pregunta9" [(ngModel)]="pregunta9" value="b">
+            <p class="ppp">Solo I – III.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta13" value="a">
-                <p class="ppp">
-                    Territorialidad: son efectuadas dentro del territorio nacional chileno.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta13" value="b">
-                <p class="ppp">Vendedor: cualquier persona natural o jurídica que se dedique de forma habitual a la venta de
-                    bienes corporales muebles, sean propios o adquiridos.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta13" value="c">
-                <p class="ppp">
-                    Título Oneroso: obliga a las partes tanto a entregar un bien, como a pagar por él.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta13" value="d">
-                <p class="ppp">
-                    Solo b) y c)</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta13" value="e">
-                <p class="ppp">Todas las anteriores.</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta9" [(ngModel)]="pregunta9" value="c">
+            <p class="ppp">Solo II – III.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta9" [(ngModel)]="pregunta9" value="d">
+            <p class="ppp">Solo I – II - III. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta9" [(ngModel)]="pregunta9" value="e">
+            <p class="ppp">Ninguna de las anteriores.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°14
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°10
+    </div>
+    <div>
+        <p class="ppp">Dentro de los procedimientos de obtención y evaluación de evidencia de auditoría, se encuentran
+            los siguientes:</p>
+        <p class="ppp">I. Inspección – Observación – Confirmación.</p>
+        <p class="ppp">II. Re Cálculo – Re Ejecución – Indagación.</p>
+        <p class="ppp">III. Procedimientos Analíticos. </p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta10" [(ngModel)]="pregunta10" value="a">
+            <p class="ppp">Solo I.</p>
         </div>
-        <div>
-            <p class="ppp">La base imponible en las exportaciones, estará conformada por:</p>
+        <div class="items">
+            <input type="radio" name="pregunta10" [(ngModel)]="pregunta10" value="b">
+            <p class="ppp">Solo II.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta14" value="a">
-                <p class="ppp">
-                    El valor aduanero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta14" value="b">
-                <p class="ppp">
-                    El valor aduanero más los gravámenes aduaneros.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta14" value="c">
-                <p class="ppp">El valor aduanero o en su defecto los valores CIF.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta14" value="d">
-                <p class="ppp">
-                    El valor aduanero o en su defecto los valores CIF más los gravámenes aduaneros.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta14" value="e">
-                <p class="ppp">
-                    Ninguna de las anteriores.</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta10" [(ngModel)]="pregunta10" value="c">
+            <p class="ppp">Solo I – III.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta10" [(ngModel)]="pregunta10" value="d">
+            <p class="ppp">Solo II – III. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta10" [(ngModel)]="pregunta10" value="e">
+            <p class="ppp">I – II – III.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Pregunta N°15
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°11
+    </div>
+    <div>
+        <p class="ppp">Analice la siguiente situación</p>
+        <p class="ppp">“Durante el proceso de auditoría llevado a cabo en “Compañía Kenan S.A.”, el auditor requiere
+            realizar confirmaciones externas, para lo cual, posterior a la aceptación de la directiva para realizarse el
+            procedimiento, se contacta con un directivo del banco con el que la empresa se encuentra afiliada, quien
+            conoce en estricto rigor, todas las transacciones llevadas a cabo y administra los contratos relacionados
+            con la entidad bancaria. El directivo, conforme a lo expuesto en la solicitud del auditor, responde
+            positivamente dando a conocer que participará del proceso, sin embargo, hay datos confidenciales, por los
+            que debe pedir autorización a la dirección de la compañía antes de entregarlas”.</p>
+        <p class="ppp">Es correcto afirmar que:</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta11" [(ngModel)]="pregunta11" value="a">
+            <p class="ppp">El auditor recibe una solicitud de confirmación positiva, puesto que el directivo de la
+                entidad bancaria, accede a entregar la información requerida.</p>
         </div>
-        <div>
-            <p class="ppp">De acuerdo a los impuestos adicionales, seleccione la alternativa correcta:</p>
-            <p class="ppp">“Joyería Albus, se dedica a la compra venta de oro, platino, joyas y piedras preciosas. En el mes
-                de enero realiza la siguiente compra (Valores Netos):</p>
-            <p class="ppp">&#x25CF; Anillos de Oro: $730.000</p>
-            <p class="ppp">&#x25CF; Piedras Preciosas Naturales para confeccionar conjuntos exclusivos: $890.000</p>
-            <p class="ppp">Argollas de Platino: $860.000”.</p>
+        <div class="items">
+            <input type="radio" name="pregunta11" [(ngModel)]="pregunta11" value="b">
+            <p class="ppp">El auditor recibe una solicitud de confirmación negativa, ya que el directivo de la entidad
+                bancaria, requiere solicitar autorización de la dirección de la empresa antes de revelar información
+                confidencial.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="pregunta15" value="a">
-                <p class="ppp">
-                    El Impuesto IVA y Adicional respectivamente de los anillos de oro son $138.700 y $109.500.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta15" value="b">
-                <p class="ppp">El impuesto IVA y adicional respectivamente de las piedras preciosas naturales son $133.500 y
-                    $169.100.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta15" value="c">
-                <p class="ppp">El impuesto IVA y adicional respectivamente de las argollas de platino son $163.000 y
-                    $133.500.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta15" value="d">
-                <p class="ppp">
-                    Solo a) y c).</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="pregunta15" value="e">
-                <p class="ppp">
-                    Solo a) y b)</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta11" [(ngModel)]="pregunta11" value="c">
+            <p class="ppp">El auditor recibe una contestación en disconformidad de parte del directivo, por haber
+                información confidencial que requiere aprobación de la dirección para ser revelada. El auditor, frente a
+                esta situación, requerirá realizar procedimientos de indagación para determinar la negatividad de
+                entregar información en su totalidad</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta11" [(ngModel)]="pregunta11" value="d">
+            <p class="ppp">El auditor recibe una contestación en disconformidad de parte del directivo de la entidad
+                bancaria, tras lo cual debe buscar otras alternativas para obtener la evidencia de auditoría que
+                requiere. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta11" [(ngModel)]="pregunta11" value="e">
+            <p class="ppp">El auditor recibe una solicitud de confirmación negativa, tras lo cual deberá utilizar otros
+                recursos para obtener la evidencia de auditoría que requiere.
+            </p>
         </div>
     </div>
-    <div class="pregunta">
-        <div class="tituloPregunta">
-            Verdaderos y falsos
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°12
+    </div>
+    <div>
+        <p class="ppp">Uno de los objetivos fundamentales del auditor es expresar, con claridad, una opinión adecuada
+            sobre los estados financieros.</p>
+        <p class="ppp">Sin embargo, esta puede verse modificada cuando:</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta12" [(ngModel)]="pregunta12" value="a">
+            <p class="ppp">Los estados financieros contienen incorrecciones materiales.</p>
         </div>
-        <div>
-            <p class="ppp">En las ventas de bienes corporales muebles y prestación de servicios, el impuesto al valor
-                agregado se devengará al momento de emitirse la factura o boleta.</p>
+        <div class="items">
+            <input type="radio" name="pregunta12" [(ngModel)]="pregunta12" value="b">
+            <p class="ppp">En caso de no poder obtener evidencia de auditoría suficiente y adecuada.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf1" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf1" value="f">
-                <p class="ppp">Falso</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta12" [(ngModel)]="pregunta12" value="c">
+            <p class="ppp">En caso de haber emitido una opinión con errores. </p>
         </div>
-        <div>
-            <p class="ppp">Para hacer uso del crédito fiscal, el contribuyente solo debe acreditar que el impuesto le ha
-                sido recargado en las respectivas facturas.</p>
+        <div class="items">
+            <input type="radio" name="pregunta12" [(ngModel)]="pregunta12" value="d">
+            <p class="ppp">Todas las anteriores.</p>
         </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf2" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf2" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">Los ingresos percibidos por entradas de los espectáculos artísticos auspiciados por el Ministerio
-                de Educación Pública, quedarán gravados por el impuesto al valor agregado.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf3" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf3" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">La transferencia que realicen los empleadores a sus trabajadores a modo de regalías, queda exenta de IVA.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf4" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf4" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">En la venta de bienes corporales muebles, en el caso de que la entrega de las especies sea anterior a la fecha de emisión del documento, o por la naturaleza del acto, el documento no se emita en el mismo momento de la entrega, el impuesto se devengará en el momento de emisión del documento.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf5" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf5" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">Los ingresos percibidos por entradas de los espectáculos artísticos auspiciados por el Ministerio
-                de Educación Pública, quedarán gravados por el impuesto al valor agregado.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf6" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf6" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">Las promesas de venta que se versen sobre bienes inmuebles suscritas posteriormente al 01.01.2017, no constituyen un hecho gravado, a contar de la entrada en vigencia de la nueva reforma tributaria.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf7" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf7" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">El impuesto a pagar se determinará, estableciendo la diferencia entre el crédito fiscal con el débito fiscal.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf8" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf8" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">La venta de un vehículo usado, que forma parte del activo inmovilizado de la empresa, y que, de acuerdo a la normativa, dio derecho a crédito fiscal a su propietario, quedará exento de IVA.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf9" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf9" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">El importador, habitual o no, es considerado un sujeto del impuesto.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf10" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf10" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">Todas las promesas de venta que cumplan con las formalidades requeridas y que se hayan suscrito antes del 01.01.2016, son hechos que no se afectan con IVA. </p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf11" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf11" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">Las empresas radioemisoras están liberadas del pago de IVA por los ingresos concebidos dentro del giro.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf12" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf12" value="f">
-                <p class="ppp">Falso</p>
-            </div>
-        </div>
-        <div>
-            <p class="ppp">El IVA es un impuesto indirecto de consumo.</p>
-        </div>
-        <div>
-            <div class="items">
-                <input type="radio" name="vyf13" value="v">
-                <p class="ppp">Verdadero.</p>
-            </div>
-            <div class="items">
-                <input type="radio" name="vyf13" value="f">
-                <p class="ppp">Falso</p>
-            </div>
+        <div class="items">
+            <input type="radio" name="pregunta12" [(ngModel)]="pregunta12" value="e">
+            <p class="ppp">Solo A) y B).</p>
         </div>
     </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°13
+    </div>
+    <div>
+        <p class="ppp">La importancia relativa, según la NIA 320, se relaciona con dos conceptos estrechamente
+            vinculados con el tratamiento de información contable. </p>
+        <p class="ppp">Dichos conceptos son: </p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta13" [(ngModel)]="pregunta13" value="a">
+            <p class="ppp">Incorrecciones Materiales y Riesgo de Auditoría. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta13" [(ngModel)]="pregunta13" value="b">
+            <p class="ppp">Razonabilidad y Significatividad. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta13" [(ngModel)]="pregunta13" value="c">
+            <p class="ppp">Razonabilidad e Independencia. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta13" [(ngModel)]="pregunta13" value="d">
+            <p class="ppp">Razonabilidad y Riesgo de Auditoría.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta13" [(ngModel)]="pregunta13" value="e">
+            <p class="ppp">Ninguna de las anteriores. </p>
+        </div>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°14
+    </div>
+    <div>
+        <p class="ppp">¿Cuáles son los componentes del Control Interno?</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta14" [(ngModel)]="pregunta14" value="a">
+            <p class="ppp">Entorno de Control – Evaluación de los Riesgos – Actividades de Control – Supervisión –
+                Comunicación.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta14" [(ngModel)]="pregunta14" value="b">
+            <p class="ppp">Evaluación de Riesgos – Diseño de Control – Comunicación. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta14" [(ngModel)]="pregunta14" value="c">
+            <p class="ppp">Entorno de Control – Actividades de Control – Supervisión – Comunicación. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta14" [(ngModel)]="pregunta14" value="d">
+            <p class="ppp">Todas las anteriores. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta14" [(ngModel)]="pregunta14" value="e">
+            <p class="ppp">Solo B) y C). </p>
+        </div>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°15
+    </div>
+    <div>
+        <p class="ppp">Lea la siguiente definición y responda:</p>
+        <p class="ppp">Son controles proactivos diseñados para impedir la ocurrencia de eventos adversos y la pérdida de
+            activos y/o recursos”.</p>
+        <p class="ppp">¿A qué tipo de control interno corresponde la definición?</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta15" [(ngModel)]="pregunta15" value="a">
+            <p class="ppp">Control de Prevención.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta15" [(ngModel)]="pregunta15" value="b">
+            <p class="ppp">Control de Corrección. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta15" [(ngModel)]="pregunta15" value="c">
+            <p class="ppp">Control de Detección. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta15" [(ngModel)]="pregunta15" value="d">
+            <p class="ppp">Control Operativo. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta15" [(ngModel)]="pregunta15" value="e">
+            <p class="ppp">Ninguna de las anteriores. </p>
+        </div>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°16
+    </div>
+    <div>
+        <p class="ppp">En un sistema de información, los controles son necesarios ya que:</p>
+        <p class="ppp">I. Grandes cantidades de datos son procesados y se espera que ocurran errores humanos en la
+            entrada de datos. </p>
+        <p class="ppp">II. Se da lugar a errores involuntarios o accidentales que pueden generar pérdida de activos y de
+            credibilidad del sistema. </p>
+        <p class="ppp">III. Para proteger el sistema de un eventual ataque de virus informáticos.</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta16" [(ngModel)]="pregunta16" value="a">
+            <p class="ppp">Solo I.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta16" [(ngModel)]="pregunta16" value="b">
+            <p class="ppp">Solo II. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta16" [(ngModel)]="pregunta16" value="c">
+            <p class="ppp">Solo III. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta16" [(ngModel)]="pregunta16" value="d">
+            <p class="ppp">Solo I – II. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta16" [(ngModel)]="pregunta16" value="e">
+            <p class="ppp">Todas las anteriores. </p>
+        </div>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°17
+    </div>
+    <div>
+        <p class="ppp">¿Cuáles son las principales características de un control interno?</p>
+        <p class="ppp">I. Oportuno, claro y sencillo. </p>
+        <p class="ppp">II. Ágil, adaptable y realista. </p>
+        <p class="ppp">III. Complejo y codificado. </p>
+        <p class="ppp">IV. Flexible y eficaz. </p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta17" [(ngModel)]="pregunta17" value="a">
+            <p class="ppp">Solo I y II.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta17" [(ngModel)]="pregunta17" value="b">
+            <p class="ppp">Solo III y IV.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta17" [(ngModel)]="pregunta17" value="c">
+            <p class="ppp">Solo I – II – IV.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta17" [(ngModel)]="pregunta17" value="d">
+            <p class="ppp">Solo I – III – IV.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta17" [(ngModel)]="pregunta17" value="e">
+            <p class="ppp">I – II – III – IV.</p>
+        </div>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°18
+    </div>
+    <div>
+        <p class="ppp">Lea el siguiente caso y responda:</p>
+        <p class="ppp">“Un fabricante de balones de futbol operaba un gran almacén donde había miles de balones listos
+            para ser embarcados. El encargado de almacén, conservaba registros detallados de inventarios. Sobrevino una
+            escasez de balones a causa de un robo cometido por un empleado que sin autorización había conseguido la
+            llave de la bodega.</p>
+        <p class="ppp">El encargado de almacén, descubrió las diferencias entre los productos en existencia física y las
+            cantidades registradas en los inventarios, pero por temor a que lo acusaran de negligencia, adulteró los
+            registros para que coincidieran las cantidades. </p>
+        <p class="ppp">Los robos continuaron generando grandes pérdidas a la empresa, hasta que el delito fue
+            descubierto”.</p>
+        <p class="ppp">¿Cuáles de los principios del control interno de la empresa son los que principalmente están
+            fallando? </p>
+        <p class="ppp"> I. Segregación de Funciones: Operación, custodia y registro.</p>
+        <p class="ppp">II. Documentación Probatoria: Representación de respaldo de toda operación. </p>
+        <p class="ppp">III. Dualidad de Personal: Al menos deben intervenir dos personas en cada operación.</p>
+        <p class="ppp">IV. Asignación de Responsabilidades: Establecimiento claro de las responsabilidades de las
+            personas, que cubran todas las operaciones de la empresa. </p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta18" [(ngModel)]="pregunta18" value="a">
+            <p class="ppp">Solo I.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta18" [(ngModel)]="pregunta18" value="b">
+            <p class="ppp">Solo I y II. </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta18" [(ngModel)]="pregunta18" value="c">
+            <p class="ppp">Solo II y III.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta18" [(ngModel)]="pregunta18" value="d">
+            <p class="ppp">Solo II – III – IV.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta18" [(ngModel)]="pregunta18" value="e">
+            <p class="ppp">I – II – III – IV.</p>
+        </div>
+    </div>
+</div>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta N°19
+    </div>
+    <div>
+        <p class="ppp">Proceso de Auditoría al ciclo de Existencias. </p>
+        <p class="ppp">La información presentada por la empresa “Flor de Loto”, en su libro mayor en relación al saldo
+            inicial es de &#36;15.990.000. De acuerdo al auditor, el saldo inicial de mercadería está compuesto por 2000
+            unidades valorizadas en &#36;9.990. ¿Cómo se registra la diferencia de saldos iniciales?</p>
+    </div>
+    <div>
+        <div class="items">
+            <input type="radio" name="pregunta19" [(ngModel)]="pregunta19" value="a">
+            <p class="ppp">Se carga la cuenta mercaderías por &#36;3.990.000 y se abona la cuenta proveedores por
+                &#36;3.990.000. (suponiendo que es una compra de mercadería no registrada). </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta19" [(ngModel)]="pregunta19" value="b">
+            <p class="ppp">Se carga la cuenta mercaderías por &#36;3.990.000 e IVA crédito fiscal por &#36;758.100 y se
+                abona la cuenta proveedores por &#36;4.748.100. (suponiendo que es una compra de mercadería no
+                registrada). </p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta19" [(ngModel)]="pregunta19" value="c">
+            <p class="ppp">Se carga la cuenta proveedores &#36;4.748.100 y se abona la cuenta mercaderías por
+                &#36;3.990.000 e IVA crédito fiscal por &#36;758.100. (Suponiendo que se trata de una devolución de
+                mercaderías).</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta19" [(ngModel)]="pregunta19" value="d">
+            <p class="ppp">Únicamente se carga la cuenta mercaderías por &#36;3.990.000, puesto que la diferencia se
+                encuentra solo en dicha cuenta.</p>
+        </div>
+        <div class="items">
+            <input type="radio" name="pregunta19" [(ngModel)]="pregunta19" value="e">
+            <p class="ppp">Ninguna de las anteriores.</p>
+        </div>
+    </div>
+</div>
+<h1>Segunda Parte: Ética.</h1>
+<div class="pregunta">
+    <div class="tituloPregunta">
+        Pregunta 1
+    </div>
+    <div>
+        <p class="ppp">¿Cuál de los siguientes principios deontológicos (deberes) básicos son característicos del
+            Profesional Contador según el código de ética internacional?</p>
+    </div>
+    <div class="items">
+        <p class="ppp">1.</p>
+        <select [(ngModel)]="clasificacion1">
+            <option value="-1">Seleccione</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+        <p class="ppp">Integridad </p>
+    </div>
+    <div>
+        <p class="ppp">Objetividad</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn2" [(ngModel)]="syn2" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn2" [(ngModel)]="syn2" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Fidelidad</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn3" [(ngModel)]="syn3" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn3" [(ngModel)]="syn3" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Independencia</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn4" [(ngModel)]="syn4" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn4" [(ngModel)]="syn4" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Responsabilidad</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn5" [(ngModel)]="syn5" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn5" [(ngModel)]="syn5" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Divisionismo</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn6" [(ngModel)]="syn6" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn6" [(ngModel)]="syn6" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Ímpetu</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn7" [(ngModel)]="syn7" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn7" [(ngModel)]="syn7" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Confidencialidad</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn8" [(ngModel)]="syn8" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn8" [(ngModel)]="syn8" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Respeto y Observancia de las disposiciones normativas y reglamentarias. </p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn9" [(ngModel)]="syn9" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn9" [(ngModel)]="syn9" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Elocuencia</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn10" [(ngModel)]="syn10" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn10" [(ngModel)]="syn10" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Competencia y actualización profesional</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn11" [(ngModel)]="syn11" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn12" [(ngModel)]="syn12" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Difusión y Colaboración</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn13" [(ngModel)]="syn13" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn13" [(ngModel)]="syn13" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Respeto entre colegas</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn14" [(ngModel)]="syn14" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn14" [(ngModel)]="syn14" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Impulsividad</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn15" [(ngModel)]="syn15" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn15" [(ngModel)]="syn15" value="n">
+        <p class="ppp">No.</p>
+    </div>
+    <div>
+        <p class="ppp">Conducta ética</p>
+    </div>
+    <div class="items">
+        <input type="radio" name="syn16" [(ngModel)]="syn16" value="s">
+        <p class="ppp">Si.</p>
+        <p class="ppp"></p>
+        <p class="ppp"></p>
+        <input type="radio" name="syn16" [(ngModel)]="syn16" value="n">
+        <p class="ppp">No.</p>
+    </div>
+</div>

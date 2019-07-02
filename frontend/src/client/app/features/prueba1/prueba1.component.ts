@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Prueba1 } from '../../classes/prueba1';
+import { HttpResponse } from '@angular/common/http';
+import { tap } from 'rxjs/operators/tap';
+import { RestService } from '../../services/rest/rest.service';
+import { ServicioRutService } from '../../services/servicioRut/servicioRut.service';
 /**
 * This class represents the main application component.
 */
@@ -78,8 +82,8 @@ export class Prueba1Component {
     private finanzasPregunta14: string;
 
     private prueba: Prueba1;
-    constructor(private router: Router) {
-        this.prueba = new Prueba1;
+    constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) {
+        this.prueba = new Prueba1();
         this.pregunta1 = '';
         this.pregunta2 = '';
         this.pregunta3 = '';
@@ -212,7 +216,24 @@ export class Prueba1Component {
         this.prueba.finanzasPregunta12 = this.finanzasPregunta12;
         this.prueba.finanzasPregunta13 = this.finanzasPregunta13;
         this.prueba.finanzasPregunta14 = this.finanzasPregunta14;
-        console.log(this.prueba);
+        this.prueba.rut = this.servicioRut.getRutPerfil().rut;
+        this.agregaPrueba().subscribe((response: HttpResponse<any>) => {
+        });
         this.router.navigate(['landing']);
+    }
+
+    public agregaPrueba() {
+        const api = '/tesis/insertaPrueba1';
+        return this.rest.post(api, this.prueba).pipe(
+            tap((response: HttpResponse<any>) => {
+                if (response.status !== 200 && response.status !== 204) {
+                    throw new Error(response.status.toString());
+                } else {
+                    if (response.status === 200) {
+                        this.router.navigate(['landing']);
+                    }
+                }
+            })
+        );
     }
 }
