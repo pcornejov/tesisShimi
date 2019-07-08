@@ -32,3 +32,13 @@
     margin-left: 20px;
     padding-top: 10px;
 }
+.finalizar {
+    display: flex;
+    justify-content: center;
+}
+.botonFinalizar {
+    background-color: #d889cb;
+}
+.botonFinalizarDisabled {
+    background-color: grey; 
+}

@@ -17,9 +17,24 @@ export class Prueba4 {
     pregunta16: string;
     pregunta17: string;
     pregunta18: string;
-    pregunta19: string;
-    riesgo1: string;
-    riesgo2: string;
-    riesgo3: string;
+    pregunta20: string;
+    pregunta21: string;
+    pregunta22: string;
+    etica1: string;
+    etica2: string;
+    etica3: string;
+    etica4: string;
+    etica5: string;
+    etica6: string;
+    etica7: string;
+    etica8: string;
+    etica9: string;
+    etica10: string;
+    etica11: string;
+    etica12: string;
+    etica13: string;
+    etica14: string;
+    etica15: string;
+
     rut: string;
 }

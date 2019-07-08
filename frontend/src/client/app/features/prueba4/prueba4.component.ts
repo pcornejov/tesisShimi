@@ -34,10 +34,24 @@ export class Prueba4Component {
     private pregunta16: string;
     private pregunta17: string;
     private pregunta18: string;
-    private pregunta19: string;
-    private riesgo1: string;
-    private riesgo2: string;
-    private riesgo3: string;
+    private pregunta20: string;
+    private pregunta21: string;
+    private pregunta22: string;
+    private etica1: string;
+    private etica2: string;
+    private etica3: string;
+    private etica4: string;
+    private etica5: string;
+    private etica6: string;
+    private etica7: string;
+    private etica8: string;
+    private etica9: string;
+    private etica10: string;
+    private etica11: string;
+    private etica12: string;
+    private etica13: string;
+    private etica14: string;
+    private etica15: string;
     private prueba4: Prueba4;
     constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) {
         this.prueba4 = new Prueba4();
@@ -59,10 +73,24 @@ export class Prueba4Component {
         this.pregunta16 = '';
         this.pregunta17 = '';
         this.pregunta18 = '';
-        this.pregunta19 = '';
-        this.riesgo1 = '';
-        this.riesgo2 = '';
-        this.riesgo3 = '';
+        this.pregunta20 = '';
+        this.pregunta21 = '';
+        this.pregunta22 = '';
+        this.etica1 = '-1';
+        this.etica2 = '-1';
+        this.etica3 = '-1';
+        this.etica4 = '-1';
+        this.etica5 = '-1';
+        this.etica6 = '-1';
+        this.etica7 = '-1';
+        this.etica8 = '-1';
+        this.etica9 = '-1';
+        this.etica10 = '-1';
+        this.etica11 = '-1';
+        this.etica12 = '-1';
+        this.etica13 = '-1';
+        this.etica14 = '-1';
+        this.etica15 = '-1';
     }
 
     public finalizar() {
@@ -84,10 +112,24 @@ export class Prueba4Component {
         this.prueba4.pregunta16 = this.pregunta16;
         this.prueba4.pregunta17 = this.pregunta17;
         this.prueba4.pregunta18 = this.pregunta18;
-        this.prueba4.pregunta19 = this.pregunta19;
-        this.prueba4.riesgo1 = this.riesgo1;
-        this.prueba4.riesgo2 = this.riesgo2;
-        this.prueba4.riesgo3 = this.riesgo3;
+        this.prueba4.pregunta20 = this.pregunta20;
+        this.prueba4.pregunta21 = this.pregunta21;
+        this.prueba4.pregunta22 = this.pregunta22;
+        this.prueba4.etica1 = this.etica1;
+        this.prueba4.etica2 = this.etica2;
+        this.prueba4.etica3 = this.etica3;
+        this.prueba4.etica4 = this.etica4;
+        this.prueba4.etica5 = this.etica5;
+        this.prueba4.etica6 = this.etica6;
+        this.prueba4.etica7 = this.etica7;
+        this.prueba4.etica8 = this.etica8;
+        this.prueba4.etica9 = this.etica9;
+        this.prueba4.etica10 = this.etica10;
+        this.prueba4.etica11 = this.etica11;
+        this.prueba4.etica12 = this.etica12;
+        this.prueba4.etica13 = this.etica13;
+        this.prueba4.etica14 = this.etica14;
+        this.prueba4.etica15 = this.etica15;
         this.prueba4.rut = this.servicioRut.getRutPerfil().rut;
         this.agregaPrueba().subscribe((response: HttpResponse<any>) => {
         });
