@@ -38,7 +38,7 @@ export class PerfilComponent implements OnInit {
                 } else {
                     if (response.status === 200) {
 
-                        this.router.navigate(['landing']);
+                        this.router.navigate(['bienvenida']);
                     }
                 }
             })

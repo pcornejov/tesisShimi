@@ -51,7 +51,7 @@ export class HomeComponent {
                         let rutPerfil = new rutYPerfil();
                         rutPerfil.rut = response.body.rut;
                         this.servicioRut.seteaRutPerfil(rutPerfil);
-                        this.router.navigate(['landing']);
+                        this.router.navigate(['bienvenida']);
                     }
                 }
             })

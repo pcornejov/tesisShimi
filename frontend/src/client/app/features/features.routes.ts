@@ -8,6 +8,7 @@ import { Prueba3Component } from './prueba3/prueba3.component';
 import { Prueba4Component } from './prueba4/prueba4.component';
 import { Prueba5Component } from './prueba5/prueba5.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 
 export const FeaturesRoutes: Route[] = [
     {
@@ -50,6 +51,10 @@ export const FeaturesRoutes: Route[] = [
             {
                 path: 'perfil',
                 component: PerfilComponent
+            },
+            {
+                path: 'bienvenida',
+                component: BienvenidaComponent
             }
 
         ],
