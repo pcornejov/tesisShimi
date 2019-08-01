@@ -15,9 +15,15 @@ import { tap } from 'rxjs/operators/tap';
     styleUrls: ['perfil.component.css'],
 })
 export class PerfilComponent implements OnInit {
-    private anioEgreso: string;
+    private genero: string;
+    private lugarEstudios: string;
+    private condicion: string;
+    private ocupacion: string;
     ngOnInit(): void {
-        this.anioEgreso = '-1';
+        this.genero = '-1'
+        this.lugarEstudios = '-1'
+        this.condicion = '-1'
+        this.ocupacion = '';
     }
     constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) { }
 
@@ -29,8 +35,11 @@ export class PerfilComponent implements OnInit {
         const api = '/tesis/agregaPerfil';
         let rutPerfil = this.servicioRut.getRutPerfil();
         let ryp = new rutYPerfil();
-        ryp.perfil = this.anioEgreso;
+        ryp.genero = this.genero;
+        ryp.lugarEstudios = this.lugarEstudios;
+        ryp.condicion = this.condicion;
         ryp.id = rutPerfil.id;
+        ryp.ocupacion = this.ocupacion;
         return this.rest.post(api, ryp).pipe(
             tap((response: HttpResponse<any>) => {
                 if (response.status !== 200 && response.status !== 204) {

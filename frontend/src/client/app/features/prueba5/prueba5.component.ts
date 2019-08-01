@@ -15,7 +15,7 @@ import { tap } from 'rxjs/operators/tap';
     styleUrls: ['prueba5.component.css'],
 })
 export class Prueba5Component {
-    private pregunta1: string;
+    
     private selector1: string;
     private selector2: string;
     private selector3: string;
@@ -39,15 +39,7 @@ export class Prueba5Component {
     private selector21: string;
     private selector22: string;
     private selector23: string;
-    private pregunta4: string;
-    private pregunta5: string;
-    private pregunta6: string;
-    private pregunta7: string;
-    private pregunta8: string;
-    private pregunta9: string;
-    private pregunta10: string;
-    private pregunta11: string;
-    private pregunta12: string;
+    
     private vyf1: string;
     private vyf2: string;
     private vyf3: string;
@@ -58,11 +50,20 @@ export class Prueba5Component {
     private vyf8: string;
     private vyf9: string;
     private vyf10: string;
-    private vyf11: string;
-    private vyf12: string;
     private selector24: string;
     private selector25: string;
     private selector26: string;
+    private pregunta2: string;
+    private pregunta3: string;
+    private pregunta5: string;
+    private pregunta6: string;
+    private pregunta7: string;
+    private pregunta8: string;
+    private pregunta10: string;
+    private pregunta11: string;
+    private pregunta12: string;
+    private pregunta13: string;
+    private pregunta14: string;
     private pregunta15: string;
     private pregunta16: string;
     private pregunta17: string;
@@ -92,25 +93,32 @@ export class Prueba5Component {
     private pregunta29: string;
     private pregunta30: string;
     private pregunta31: string;
-    private pregunta32: string;
-    private pregunta33: string;
-    private pregunta34: string;
-    private pregunta35: string;
-    private pregunta36: string;
-    private pregunta37: string;
+    private selector39: string;
+    private selector40: string;
+    private selector41: string;
+    private selector42: string;
+    private selector43: string;
+    private selector44: string;
+    private selector45: string;
+    private selector46: string;
+    private selector47: string;
+    private selector48: string;
     private prueba5: Prueba5;
+    private tiempoInicio: any = performance.now();
+    private tiempoFin: any;
     constructor(private router: Router, private rest: RestService, private servicioRut: ServicioRutService) {
         this.prueba5 = new Prueba5();
-        this.pregunta1 = '';
-        this.pregunta4 = '';
+        this.pregunta2 = '';
+        this.pregunta3 = '';
         this.pregunta5 = '';
         this.pregunta6 = '';
         this.pregunta7 = '';
         this.pregunta8 = '';
-        this.pregunta9 = '';
         this.pregunta10 = '';
         this.pregunta11 = '';
         this.pregunta12 = '';
+        this.pregunta13 = '';
+        this.pregunta14 = '';
         this.pregunta15 = '';
         this.pregunta16 = '';
         this.pregunta17 = '';
@@ -128,12 +136,6 @@ export class Prueba5Component {
         this.pregunta29 = '';
         this.pregunta30 = '';
         this.pregunta31 = '';
-        this.pregunta32 = '';
-        this.pregunta33 = '';
-        this.pregunta34 = '';
-        this.pregunta35 = '';
-        this.pregunta36 = '';
-        this.pregunta37 = '';
         this.vyf1 = '';
         this.vyf2 = '';
         this.vyf3 = '';
@@ -144,8 +146,6 @@ export class Prueba5Component {
         this.vyf8 = '';
         this.vyf9 = '';
         this.vyf10 = '';
-        this.vyf11 = '';
-        this.vyf12 = '';
         this.selector1 = '-1';
         this.selector2 = '-1';
         this.selector3 = '-1';
@@ -184,18 +184,30 @@ export class Prueba5Component {
         this.selector36 = '-1';
         this.selector37 = '-1';
         this.selector38 = '-1';
+        this.selector39 = '-1';
+        this.selector40 = '-1';
+        this.selector41 = '-1';
+        this.selector42= '-1';
+        this.selector43 = '-1';
+        this.selector44 = '-1';
+        this.selector45 = '-1';
+        this.selector46 = '-1';
+        this.selector47 = '-1';
+        this.selector48 = '-1';
     }
     public finalizar() {
-        this.prueba5.pregunta1 = this.pregunta1;
-        this.prueba5.pregunta4 = this.pregunta4;
+        this.prueba5.pregunta2 = this.pregunta2;
+        this.prueba5.pregunta3 = this.pregunta3;
         this.prueba5.pregunta5 = this.pregunta5;
         this.prueba5.pregunta6 = this.pregunta6;
         this.prueba5.pregunta7 = this.pregunta7;
         this.prueba5.pregunta8 = this.pregunta8;
-        this.prueba5.pregunta9 = this.pregunta9;
         this.prueba5.pregunta10 = this.pregunta10;
         this.prueba5.pregunta11 = this.pregunta11;
         this.prueba5.pregunta12 = this.pregunta12;
+        
+        this.prueba5.pregunta13 = this.pregunta13;
+        this.prueba5.pregunta14 = this.pregunta14;
         this.prueba5.pregunta15 = this.pregunta15;
         this.prueba5.pregunta16 = this.pregunta16;
         this.prueba5.pregunta17 = this.pregunta17;
@@ -204,6 +216,7 @@ export class Prueba5Component {
         this.prueba5.pregunta20 = this.pregunta20;
         this.prueba5.pregunta21 = this.pregunta21;
         this.prueba5.pregunta22 = this.pregunta22;
+        
         this.prueba5.pregunta23 = this.pregunta23;
         this.prueba5.pregunta24 = this.pregunta24;
         this.prueba5.pregunta25 = this.pregunta25;
@@ -213,12 +226,7 @@ export class Prueba5Component {
         this.prueba5.pregunta29 = this.pregunta29;
         this.prueba5.pregunta30 = this.pregunta30;
         this.prueba5.pregunta31 = this.pregunta31;
-        this.prueba5.pregunta32 = this.pregunta32;
-        this.prueba5.pregunta33 = this.pregunta33;
-        this.prueba5.pregunta34 = this.pregunta34;
-        this.prueba5.pregunta35 = this.pregunta35;
-        this.prueba5.pregunta36 = this.pregunta36;
-        this.prueba5.pregunta37 = this.pregunta37;
+        
         this.prueba5.vyf1 = this.vyf1;
         this.prueba5.vyf2 = this.vyf2;
         this.prueba5.vyf3 = this.vyf3;
@@ -229,8 +237,6 @@ export class Prueba5Component {
         this.prueba5.vyf8 = this.vyf8;
         this.prueba5.vyf9 = this.vyf9;
         this.prueba5.vyf10 = this.vyf10;
-        this.prueba5.vyf11 = this.vyf11;
-        this.prueba5.vyf12 = this.vyf12;
         this.prueba5.selector1 = this.selector1;
         this.prueba5.selector2 = this.selector2;
         this.prueba5.selector3 = this.selector3;
@@ -269,13 +275,25 @@ export class Prueba5Component {
         this.prueba5.selector36 = this.selector36;
         this.prueba5.selector37 = this.selector37;
         this.prueba5.selector38 = this.selector38;
+        this.prueba5.selector39 = this.selector39;
+        this.prueba5.selector40 = this.selector40;
+        this.prueba5.selector41 = this.selector41;
+        this.prueba5.selector42 = this.selector42;
+        this.prueba5.selector43 = this.selector43;
+        this.prueba5.selector44 = this.selector44;
+        this.prueba5.selector45 = this.selector45;
+        this.prueba5.selector46 = this.selector46;
+        this.prueba5.selector47 = this.selector47;
+        this.prueba5.selector48 = this.selector48;
         this.prueba5.rut = this.servicioRut.getRutPerfil().rut;
         this.agregaPrueba().subscribe((response: HttpResponse<any>) => {
         });
-        this.router.navigate(['landing']);
     }
 
     public agregaPrueba() {
+        this.tiempoFin = performance.now();
+        let minutos = ((this.tiempoFin - this.tiempoInicio) / (1000*60)) % 60;
+        this.prueba5.tiempo = minutos;
         const api = '/tesis/insertaPrueba5';
         return this.rest.post(api, this.prueba5).pipe(
             tap((response: HttpResponse<any>) => {

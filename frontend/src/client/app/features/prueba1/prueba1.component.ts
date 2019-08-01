@@ -61,6 +61,12 @@ export class Prueba1Component {
     private vyf2: string;
     private vyf3: string;
     private vyf4: string;
+    private vyf5: string;
+    private vyf6: string;
+    private vyf7: string;
+    private vyf8: string;
+    private vyf9: string;
+    private vyf10: string;
     private finanzasSelect1: string;
     private finanzasSelect2: string;
     private finanzasSelect3: string;
@@ -80,7 +86,10 @@ export class Prueba1Component {
     private finanzasPregunta12: string;
     private finanzasPregunta13: string;
     private finanzasPregunta14: string;
-
+    private finanzasPregunta15: string;
+    private finanzasPregunta17: string;
+    private tiempoInicio: any = performance.now();
+    private tiempoFin: any;
     private prueba: Prueba1;
     constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) {
         this.prueba = new Prueba1();
@@ -130,6 +139,12 @@ export class Prueba1Component {
         this.vyf2 = '';
         this.vyf3 = '';
         this.vyf4 = '';
+        this.vyf5 = '';
+        this.vyf6 = '';
+        this.vyf7 = '';
+        this.vyf8 = '';
+        this.vyf9 = '';
+        this.vyf10 = '';
         this.finanzasSelect1 = '-1';
         this.finanzasSelect2 = '-1';
         this.finanzasSelect3 = '-1';
@@ -149,6 +164,8 @@ export class Prueba1Component {
         this.finanzasPregunta12 = '';
         this.finanzasPregunta13 = '';
         this.finanzasPregunta14 = '';
+        this.finanzasPregunta15 = '';
+        this.finanzasPregunta17 = '';
     }
     public finalizar() {
         this.prueba.pregunta1 = this.pregunta1;
@@ -197,6 +214,12 @@ export class Prueba1Component {
         this.prueba.vyf2 = this.vyf2;
         this.prueba.vyf3 = this.vyf3;
         this.prueba.vyf4 = this.vyf4;
+        this.prueba.vyf5 = this.vyf5;
+        this.prueba.vyf6 = this.vyf6;
+        this.prueba.vyf7 = this.vyf7;
+        this.prueba.vyf8= this.vyf8;
+        this.prueba.vyf9 = this.vyf9;
+        this.prueba.vyf10 = this.vyf10;
         this.prueba.finanzasSelect1 = this.finanzasSelect1;
         this.prueba.finanzasSelect2 = this.finanzasSelect2;
         this.prueba.finanzasSelect3 = this.finanzasSelect3;
@@ -216,13 +239,17 @@ export class Prueba1Component {
         this.prueba.finanzasPregunta12 = this.finanzasPregunta12;
         this.prueba.finanzasPregunta13 = this.finanzasPregunta13;
         this.prueba.finanzasPregunta14 = this.finanzasPregunta14;
+        this.prueba.finanzasPregunta15 = this.finanzasPregunta15;
+        this.prueba.finanzasPregunta17 = this.finanzasPregunta17;
         this.prueba.rut = this.servicioRut.getRutPerfil().rut;
         this.agregaPrueba().subscribe((response: HttpResponse<any>) => {
         });
-        this.router.navigate(['landing']);
     }
 
     public agregaPrueba() {
+        this.tiempoFin = performance.now();
+        let minutos = ((this.tiempoFin - this.tiempoInicio) / (1000*60)) % 60;
+        this.prueba.tiempo = minutos;
         const api = '/tesis/insertaPrueba1';
         return this.rest.post(api, this.prueba).pipe(
             tap((response: HttpResponse<any>) => {

@@ -12,5 +12,11 @@ public class rutperfil extends ModelCore{
 	@ModelField
 	public String rut;
 	@ModelField
-	public String perfil;	
+	public String genero;
+	@ModelField
+	public String condicion;
+	@ModelField
+	public String lugarEstudios;
+	@ModelField
+	public String ocupacion;
 }

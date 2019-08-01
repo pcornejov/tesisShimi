@@ -104,6 +104,18 @@ public class Prueba1 extends ModelCore{
 	@ModelField
 	public String vyf4;
 	@ModelField
+	public String vyf5;
+	@ModelField
+	public String vyf6;
+	@ModelField
+	public String vyf7;
+	@ModelField
+	public String vyf8;
+	@ModelField
+	public String vyf9;
+	@ModelField
+	public String vyf10;
+	@ModelField
 	public String finanzasSelect1;
 	@ModelField
 	public String finanzasSelect2;
@@ -141,4 +153,12 @@ public class Prueba1 extends ModelCore{
 	public String finanzasPregunta13;
 	@ModelField
 	public String finanzasPregunta14;
+	@ModelField
+	public String finanzasPregunta15;
+	@ModelField
+	public String finanzasPregunta17;
+	@ModelField
+	public Integer buenas;
+	@ModelField
+	public Integer tiempo;
 }

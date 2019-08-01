@@ -13,11 +13,15 @@
 
 					<div class="wrap-input100 validate-input">
 						<input style="text-align:center;" class="input100" type="text" name="email" placeholder="Ejemplo: 12345678-9" [(ngModel)]="rut">
-						<div></div>
+						
+					</div>
+					<div class="mensajeError">
+							{{ mensajeError }}
 					</div>
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
+							
 							<button class="login100-form-btn" (click)="ingresar()">
 								Acceder
 							</button>

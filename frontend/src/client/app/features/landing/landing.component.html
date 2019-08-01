@@ -4,79 +4,157 @@
         <div class="row">
             <div class="col-lg-12 mx-auto">
                 <div class="form-group controls pregunta">
-                    <label> Resultados de las pruebas </label>
+                    <label> Resultados </label>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 mx-auto">
                 <div class="control-group cajapregunta">
-
                     <!-- --------------------------------------------------------------------------------- -->
                     <div class="row">
-                        <div class="col-lg-4 mx-auto">
-                            <div class="form-group controls" style="text-align: center">
-                                <h3><strong>Pruebas</strong></h3>
-                                <div class="row">
-                                    <div class="col-lg-10 mx-auto">
-                                        Economía y Finanzas
-                                    </div>
-                                    <div class="col-lg-2 mx-auto">
-                                        <button class="btn btn-primary btn-xl" (click)="prueba1()">ir</button>
-                                    </div>
+                        <div style="display: flex; width: 100%">
+                            <div class="col-lg-4 mx-auto">
+                                <div class="form-group controls" style="text-align: center">
+                                    <h3><strong>Pruebas</strong></h3>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-lg-10 mx-auto">
-                                        Administración, Gobernanza y Administración de Riesgos
-                                    </div>
-                                    <div class="col-lg-2 mx-auto">
-                                        <button class="btn btn-primary btn-xl" (click)="prueba2()"
-                                            title="Administración, Gobernanza y Administración de Riesgos">ir</button>
-                                    </div>
+                            </div>
+                            <div class="col-lg-4 mx-auto">
+                                <div class="form-group controls" style="text-align: center">
+                                    <h3><strong>Puntaje <br>Obtenido/Total</strong></h3>
                                 </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-lg-10 mx-auto">
-                                        Tributación y Derecho Laboral
-                                    </div>
-                                    <div class="col-lg-2 mx-auto">
-                                        <button class="btn btn-primary btn-xl" (click)="prueba3()">ir</button>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-lg-10 mx-auto">
-                                        Auditoría y Ética
-                                    </div>
-                                    <div class="col-lg-2 mx-auto">
-                                        <button class="btn btn-primary btn-xl" (click)="prueba4()">ir</button>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <div class="col-lg-10 mx-auto">
-                                        Contabilidad General y Contabilidad de Costos
-                                    </div>
-                                    <div class="col-lg-2 mx-auto">
-                                        <button class="btn btn-primary btn-xl" (click)="prueba5()">ir</button>
-                                    </div>
+                            </div>
+                            <div class="col-lg-4 mx-auto">
+                                <div class="form-group controls" style="text-align: center">
+                                    <h3><strong>Tiempo</strong></h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 mx-auto">
-                            <div class="form-group controls" style="text-align: center">
-                                <h3><strong>Porcentaje de Aciertos</strong></h3>
+                        <div style="display: flex; width: 100%">
+                            <div class="col-lg-4 mx-auto">
+                                <div class="form-group controls" style="text-align: center">
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto">
+                                            Economía y Finanzas
+                                        </div>
+                                        <div class="col-lg-2 mx-auto">
+                                            <button class="btn btn-primary btn-xl" (click)="prueba1()"
+                                                [disabled]="existePrueba1"
+                                                [class.botonDisabled]="existePrueba1">ir</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto">
+                                            Administración, Gobernanza y Administración de Riesgos
+                                        </div>
+                                        <div class="col-lg-2 mx-auto">
+                                            <button class="btn btn-primary btn-xl" (click)="prueba2()" [disabled]="true" [class.botonDisabled]="true"
+                                                title="Administración, Gobernanza y Administración de Riesgos">ir</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto">
+                                            Tributación y Derecho Laboral
+                                        </div>
+                                        <div class="col-lg-2 mx-auto">
+                                            <button class="btn btn-primary btn-xl" (click)="prueba3()"
+                                                [disabled]="existePrueba3"
+                                                [class.botonDisabled]="existePrueba3">ir</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto">
+                                            Auditoría y Ética
+                                        </div>
+                                        <div class="col-lg-2 mx-auto">
+                                            <button class="btn btn-primary btn-xl" (click)="prueba4()"
+                                                [disabled]="existePrueba4 || true"
+                                                [class.botonDisabled]="existePrueba4 || true">ir</button>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto">
+                                            Contabilidad General y Contabilidad de Costos
+                                        </div>
+                                        <div class="col-lg-2 mx-auto">
+                                            <button class="btn btn-primary btn-xl" (click)="prueba5()"
+                                                [disabled]="existePrueba5"
+                                                [class.botonDisabled]="existePrueba5">ir</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 mx-auto">
-                            <div class="form-group controls" style="text-align: center">
-                                <h3><strong>Tiempo</strong></h3>
+                            <div class="col-lg-4 mx-auto">
+                                <div class="form-group controls" style="text-align: center">
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba1Bd.buenas }} /73
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            0/0
+                                            <!-- {{ prueba2Bd.buenas }} /79 -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba3Bd.buenas }} /58
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba4Bd.buenas }} /44
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba5Bd.buenas }} /87
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mx-auto">
+                                <div class="form-group controls" style="text-align: center">
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba1Bd.tiempo }} minutos.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            0/0
+                                            <!-- {{ prueba2Bd.tiempo }} minutos. -->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba3Bd.tiempo }} minutos.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba4Bd.tiempo }} minutos.
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
+                                            {{ prueba5Bd.tiempo }} minutos.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+            <img [src]="rutaImagen" class="resize">
         </div>
         <!-- --------------------------------------------------------------------------------- -->
     </div>

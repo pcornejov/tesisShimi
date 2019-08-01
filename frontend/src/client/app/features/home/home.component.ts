@@ -21,15 +21,51 @@ export class HomeComponent {
     private rut: string;
     private rutValido: boolean;
     private anioEgreso: string;
+    private mensajeError: string;
     constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) {
 
         this.rutValido = false;
     }
 
     public ingresar() {
-        this.retornoIngresar().subscribe((response: HttpResponse<any>) => {
-
-        })
+        this.rutValido = true;
+        if(!this.rut.includes('-')) {
+            this.mensajeError = 'El rut ingresado es invalido'
+            return;
+        }
+        const cuerpo = this.rut.substring(0, this.rut.indexOf('-'));
+        const dv = this.rut.substring(this.rut.indexOf('-')+1, this.rut.length);
+        // Calcular Dígito Verificador
+        let suma = 0;
+        let multiplo = 2;
+        // Para cada dígito del Cuerpo
+        for (let i = 1; i <= cuerpo.length; i++) {
+            // Obtener su Producto con el Múltiplo Correspondiente
+            const index = multiplo * +cuerpo.charAt(cuerpo.length - i);
+            // Sumar al Contador General
+            suma += index;
+            // Consolidar Múltiplo dentro del rango [2,7]
+            if (multiplo < 7) {
+                multiplo += 1;
+            } else {
+                multiplo = 2;
+            }
+        }
+        // Calcular Dígito Verificador en base al Módulo 11
+        let dvEsperado: any = 11 - (suma % 11);
+        if (dvEsperado === 10) {
+            dvEsperado = 'k';
+        }
+        if (dvEsperado === 11) {
+            dvEsperado = 0;
+        }
+        if (String(dvEsperado) === dv.toLowerCase()) {
+            this.retornoIngresar().subscribe((response: HttpResponse<any>) => {
+            })
+        } else {
+            this.mensajeError = 'El rut ingresado es invalido'
+            return;
+        }
     }
     public retornoIngresar(): Observable<HttpResponse<any>> {
         const api = '/tesis/verificaRut';

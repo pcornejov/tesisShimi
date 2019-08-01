@@ -1,5 +1,8 @@
 export class rutYPerfil {
     rut: string;
-    perfil: string;
     id: number;
+    genero: string;
+    lugarEstudios: string;
+    condicion: string;
+    ocupacion: string;
 }

@@ -17,7 +17,7 @@ export class RestService {
         this.URL = (Config.ENV === 'DEV') ? Config.PATH + '/' + Config.WEB + 'api' :
         'http://35.227.16.161:8080/shimiApp/api';
     }
-
+     
     public get(service: string): Observable<any> {
         console.log(this.URL);
         return this.http.get<HttpResponse<any>>(this.URL + service, { observe: 'response' });

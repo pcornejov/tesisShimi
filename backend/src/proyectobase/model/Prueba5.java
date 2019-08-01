@@ -12,8 +12,6 @@ public class Prueba5 extends ModelCore{
 	@ModelField
 	public String rut;
 	@ModelField
-	public String pregunta1;
-	@ModelField
 	public String selector1;
 	@ModelField
 	public String selector2;
@@ -60,71 +58,11 @@ public class Prueba5 extends ModelCore{
 	@ModelField
 	public String selector23;
 	@ModelField
-	public String pregunta4;
-	@ModelField
-	public String pregunta5;
-	@ModelField
-	public String pregunta6;
-	@ModelField
-	public String pregunta7;
-	@ModelField
-	public String pregunta8;
-	@ModelField
-	public String pregunta9;
-	@ModelField
-	public String pregunta10;
-	@ModelField
-	public String pregunta11;
-	@ModelField
-	public String pregunta12;
-	@ModelField
-	public String vyf1;
-	@ModelField
-	public String vyf2;
-	@ModelField
-	public String vyf3;
-	@ModelField
-	public String vyf4;
-	@ModelField
-	public String vyf5;
-	@ModelField
-	public String vyf6;
-	@ModelField
-	public String vyf7;
-	@ModelField
-	public String vyf8;
-	@ModelField
-	public String vyf9;
-	@ModelField
-	public String vyf10;
-	@ModelField
-	public String vyf11;
-	@ModelField
-	public String vyf12;
-	@ModelField
 	public String selector24;
 	@ModelField
 	public String selector25;
 	@ModelField
 	public String selector26;
-	@ModelField
-	public String pregunta15;
-	@ModelField
-	public String pregunta16;
-	@ModelField
-	public String pregunta17;
-	@ModelField
-	public String pregunta18;
-	@ModelField
-	public String pregunta19;
-	@ModelField
-	public String pregunta20;
-	@ModelField
-	public String pregunta21;
-	@ModelField
-	public String pregunta22;
-	@ModelField
-	public String pregunta23;
 	@ModelField
 	public String selector27;
 	@ModelField
@@ -150,6 +88,86 @@ public class Prueba5 extends ModelCore{
 	@ModelField
 	public String selector38;
 	@ModelField
+	public String selector39;
+	@ModelField
+	public String selector40;
+	@ModelField
+	public String selector41;
+	@ModelField
+	public String selector42;
+	@ModelField
+	public String selector43;
+	@ModelField
+	public String selector44;
+	@ModelField
+	public String selector45;
+	@ModelField
+	public String selector46;
+	@ModelField
+	public String selector47;
+	@ModelField
+	public String selector48;
+	@ModelField
+	public String vyf1;
+	@ModelField
+	public String vyf2;
+	@ModelField
+	public String vyf3;
+	@ModelField
+	public String vyf4;
+	@ModelField
+	public String vyf5;
+	@ModelField
+	public String vyf6;
+	@ModelField
+	public String vyf7;
+	@ModelField
+	public String vyf8;
+	@ModelField
+	public String vyf9;
+	@ModelField
+	public String vyf10;
+	@ModelField
+	public String pregunta2;
+	@ModelField
+	public String pregunta3;
+	@ModelField
+	public String pregunta5;
+	@ModelField
+	public String pregunta6;
+	@ModelField
+	public String pregunta7;
+	@ModelField
+	public String pregunta8;
+	@ModelField
+	public String pregunta10;
+	@ModelField
+	public String pregunta11;
+	@ModelField
+	public String pregunta12;
+	@ModelField
+	public String pregunta13;
+	@ModelField
+	public String pregunta14;
+	@ModelField
+	public String pregunta15;
+	@ModelField
+	public String pregunta16;
+	@ModelField
+	public String pregunta17;
+	@ModelField
+	public String pregunta18;
+	@ModelField
+	public String pregunta19;
+	@ModelField
+	public String pregunta20;
+	@ModelField
+	public String pregunta21;
+	@ModelField
+	public String pregunta22;
+	@ModelField
+	public String pregunta23;
+	@ModelField
 	public String pregunta24;
 	@ModelField
 	public String pregunta25;
@@ -166,15 +184,7 @@ public class Prueba5 extends ModelCore{
 	@ModelField
 	public String pregunta31;
 	@ModelField
-	public String pregunta32;
+	public Integer buenas;
 	@ModelField
-	public String pregunta33;
-	@ModelField
-	public String pregunta34;
-	@ModelField
-	public String pregunta35;
-	@ModelField
-	public String pregunta36;
-	@ModelField
-	public String pregunta37;
+	public Integer tiempo;
 }

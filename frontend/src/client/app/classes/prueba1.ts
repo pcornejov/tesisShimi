@@ -45,6 +45,12 @@ export class Prueba1 {
     vyf2: string;
     vyf3: string;
     vyf4: string;
+    vyf5: string;
+    vyf6: string;
+    vyf7: string;
+    vyf8: string;
+    vyf9: string;
+    vyf10: string;
     finanzasSelect1: string;
     finanzasSelect2: string;
     finanzasSelect3: string;
@@ -64,5 +70,9 @@ export class Prueba1 {
     finanzasPregunta12: string;
     finanzasPregunta13: string;
     finanzasPregunta14: string;
+    finanzasPregunta15: string;
+    finanzasPregunta17: string;
     rut: string;
+    buenas: number;
+    tiempo: number;
 }
