@@ -12,7 +12,7 @@ public class Prueba4 extends ModelCore{
 	@ModelField
 	public String rut;
 	@ModelField
-    public String pregunta1;
+    public String pregunta2;
     @ModelField
     public String pregunta3;
     @ModelField
@@ -24,7 +24,7 @@ public class Prueba4 extends ModelCore{
     @ModelField
     public String pregunta7;
     @ModelField
-    public String pregunta8;
+    public String pregunta9;
     @ModelField
     public String pregunta10;
     @ModelField
@@ -55,8 +55,6 @@ public class Prueba4 extends ModelCore{
     public String pregunta23;
     @ModelField
     public String pregunta24;
-    @ModelField
-    public String pregunta25;
     @ModelField
     public String pregunta26;
     @ModelField
@@ -93,14 +91,6 @@ public class Prueba4 extends ModelCore{
     public String vyf5;
     @ModelField
     public String vyf6;
-    @ModelField
-    public String vyf7;
-    @ModelField
-    public String vyf8;
-    @ModelField
-    public String vyf9;
-    @ModelField
-    public String vyf10;
     @ModelField
     public Integer buenas;
     @ModelField

@@ -238,6 +238,10 @@ export class Prueba2Component {
         this.prueba2.primeraPartePregunta17 = this.primeraPartePregunta17;
         this.prueba2.primeraPartePregunta18 = this.primeraPartePregunta18;
         this.prueba2.primeraPartePregunta19 = this.primeraPartePregunta19;
+        this.prueba2.primeraPartePregunta20 = this.primeraPartePregunta20;
+        this.prueba2.primeraPartePregunta21 = this.primeraPartePregunta21;
+        this.prueba2.primeraPartePregunta22 = this.primeraPartePregunta22;
+        this.prueba2.primeraPartePregunta23 = this.primeraPartePregunta23;
         this.prueba2.vyf1 = this.vyf1;
         this.prueba2.vyf2 = this.vyf2;
         this.prueba2.vyf3 = this.vyf3;
@@ -246,8 +250,6 @@ export class Prueba2Component {
         this.prueba2.vyf6 = this.vyf6;
         this.prueba2.vyf7 = this.vyf7;
         this.prueba2.vyf8 = this.vyf8;
-        this.prueba2.vyf9 = this.vyf9;
-        this.prueba2.vyf10 = this.vyf10;
         this.prueba2.vyf11 = this.vyf11;
         this.prueba2.vyf12 = this.vyf12;
         this.prueba2.vyf13 = this.vyf13;
@@ -273,6 +275,21 @@ export class Prueba2Component {
         this.prueba2.selector18 = this.selector18;
         this.prueba2.selector19 = this.selector19;
         this.prueba2.selector20 = this.selector20;
+        this.prueba2.selector21 = this.selector21;
+        this.prueba2.selector22 = this.selector22;
+        this.prueba2.selector23 = this.selector23;
+        this.prueba2.selector24 = this.selector24;
+        this.prueba2.selector25 = this.selector25;
+        this.prueba2.selector26 = this.selector26;
+        this.prueba2.selector27 = this.selector27;
+        this.prueba2.selector28 = this.selector28;
+        this.prueba2.selector29 = this.selector29;
+        this.prueba2.selector30 = this.selector30;
+        this.prueba2.selector31 = this.selector31;
+        this.prueba2.selector32 = this.selector32;
+        this.prueba2.selector33 = this.selector33;
+        this.prueba2.selector34 = this.selector34;
+        this.prueba2.selector35 = this.selector35;
         this.prueba2.segundaPartePregunta1 = this.segundaPartePregunta1;
         this.prueba2.segundaPartePregunta2 = this.segundaPartePregunta2;
         this.prueba2.segundaPartePregunta3 = this.segundaPartePregunta3;
@@ -307,7 +324,7 @@ export class Prueba2Component {
         this.tiempoFin = performance.now();
         let minutos = ((this.tiempoFin - this.tiempoInicio) / (1000*60)) % 60;
         this.prueba2.tiempo = minutos;
-        const api = '/tesis/insertaPrueba1';
+        const api = '/tesis/insertaPrueba2';
         return this.rest.post(api, this.prueba2).pipe(
             tap((response: HttpResponse<any>) => {
                 if (response.status !== 200 && response.status !== 204) {

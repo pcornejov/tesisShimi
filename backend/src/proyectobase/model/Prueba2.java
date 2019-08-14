@@ -3,7 +3,7 @@ package proyectobase.model;
 import earlgrey.annotations.Model;
 import earlgrey.annotations.ModelField;
 import earlgrey.core.ModelCore;
-//@Model(name = "prueba2", tableName = "prueba2", version = 1)
+@Model(name = "prueba2", tableName = "prueba2", version = 1)
 public class Prueba2 extends ModelCore{
 	@ModelField
 	public String id;
@@ -11,6 +11,8 @@ public class Prueba2 extends ModelCore{
 	public String rut;
 	@ModelField
 	public Integer tiempo;
+	@ModelField
+	public Integer buenas;
 	@ModelField
 	public String vyf1;
 	@ModelField
@@ -27,10 +29,6 @@ public class Prueba2 extends ModelCore{
 	public String vyf7;
 	@ModelField
 	public String vyf8;
-	@ModelField
-	public String vyf9;
-	@ModelField
-	public String vyf10;
 	@ModelField
 	public String vyf11;
 	@ModelField
@@ -80,6 +78,14 @@ public class Prueba2 extends ModelCore{
 	@ModelField
 	public String primeraPartePregunta19;
 	@ModelField
+	public String primeraPartePregunta20;
+	@ModelField
+	public String primeraPartePregunta21;
+	@ModelField
+	public String primeraPartePregunta22;
+	@ModelField
+	public String primeraPartePregunta23;
+	@ModelField
 	public String selector1;
 	@ModelField
 	public String selector2;
@@ -119,6 +125,36 @@ public class Prueba2 extends ModelCore{
 	public String selector19;
 	@ModelField
 	public String selector20;
+	@ModelField
+	public String selector21;
+	@ModelField
+	public String selector22;
+	@ModelField
+	public String selector23;
+	@ModelField
+	public String selector24;
+	@ModelField
+	public String selector25;
+	@ModelField
+	public String selector26;
+	@ModelField
+	public String selector27;
+	@ModelField
+	public String selector28;
+	@ModelField
+	public String selector29;
+	@ModelField
+	public String selector30;
+	@ModelField
+	public String selector31;
+	@ModelField
+	public String selector32;
+	@ModelField
+	public String selector33;
+	@ModelField
+	public String selector34;
+	@ModelField
+	public String selector35;
 	@ModelField
 	public String segundaPartePregunta1;
 	@ModelField

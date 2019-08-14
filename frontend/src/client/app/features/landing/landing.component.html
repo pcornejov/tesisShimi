@@ -46,11 +46,11 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-lg-10 mx-auto">
-                                            Administración, Gobernanza y Administración de Riesgos
+                                            Administración, Gobierno y Administración de Riesgos
                                         </div>
                                         <div class="col-lg-2 mx-auto">
-                                            <button class="btn btn-primary btn-xl" (click)="prueba2()" [disabled]="true" [class.botonDisabled]="true"
-                                                title="Administración, Gobernanza y Administración de Riesgos">ir</button>
+                                            <button class="btn btn-primary btn-xl" (click)="prueba2()" [disabled]="existePrueba2" [class.botonDisabled]="existePrueba2"
+                                                title="Administración, Gobierno y Administración de Riesgos">ir</button>
                                         </div>
                                     </div>
                                     <br>
@@ -71,8 +71,8 @@
                                         </div>
                                         <div class="col-lg-2 mx-auto">
                                             <button class="btn btn-primary btn-xl" (click)="prueba4()"
-                                                [disabled]="existePrueba4 || true"
-                                                [class.botonDisabled]="existePrueba4 || true">ir</button>
+                                                [disabled]="existePrueba4"
+                                                [class.botonDisabled]="existePrueba4">ir</button>
                                         </div>
                                     </div>
                                     <br>
@@ -97,8 +97,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
-                                            0/0
-                                            <!-- {{ prueba2Bd.buenas }} /79 -->
+                                           {{ prueba2Bd.buenas }} /94
                                         </div>
                                     </div>
                                     <div class="row">
@@ -108,12 +107,12 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
-                                            {{ prueba4Bd.buenas }} /44
+                                            {{ prueba4Bd.buenas }} /35
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
-                                            {{ prueba5Bd.buenas }} /87
+                                            {{ prueba5Bd.buenas }} /86
                                         </div>
                                     </div>
                                 </div>
@@ -127,8 +126,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12 mx-auto" style="padding-bottom: 40px;">
-                                            0/0
-                                            <!-- {{ prueba2Bd.tiempo }} minutos. -->
+                                            {{ prueba2Bd.tiempo }} minutos.
                                         </div>
                                     </div>
                                     <div class="row">

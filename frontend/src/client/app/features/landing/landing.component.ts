@@ -9,6 +9,7 @@ import { Prueba1 } from '../../classes/prueba1';
 import { Prueba3 } from '../../classes/prueba3';
 import { Prueba4 } from '../../classes/prueba4';
 import { Prueba5 } from '../../classes/prueba5';
+import { Prueba2 } from '../../classes/prueba2';
 /**
 * This class represents the main application component.
 */
@@ -25,6 +26,7 @@ export class LandingComponent implements OnInit {
     private existePrueba4: boolean = false;
     private existePrueba5: boolean = false;
     private prueba1Bd: Prueba1;
+    private prueba2Bd: Prueba2;
     private prueba3Bd: Prueba3;
     private prueba4Bd: Prueba4;
     private prueba5Bd: Prueba5;
@@ -33,6 +35,7 @@ export class LandingComponent implements OnInit {
     ngOnInit(): void {
         //verificar si tengo pruebas
         this.prueba1Bd = new Prueba1();
+        this.prueba2Bd = new Prueba2();
         this.prueba3Bd = new Prueba3();
         this.prueba4Bd = new Prueba4();
         this.prueba5Bd = new Prueba5();
@@ -47,6 +50,7 @@ export class LandingComponent implements OnInit {
     }
     private prueba2() {
         this.router.navigate(['prueba2']);
+        this.existePrueba2 = true;
     }
     private prueba3() {
         this.router.navigate(['prueba3']);
@@ -65,6 +69,9 @@ export class LandingComponent implements OnInit {
         this.prueba1Bd = new Prueba1();
         this.prueba1Bd.buenas = 0;
         this.prueba1Bd.tiempo = 0;
+        this.prueba2Bd = new Prueba2();
+        this.prueba2Bd.buenas = 0;
+        this.prueba2Bd.tiempo = 0;
         this.prueba3Bd = new Prueba3();
         this.prueba3Bd.buenas = 0;
         this.prueba3Bd.tiempo = 0;
@@ -88,7 +95,7 @@ export class LandingComponent implements OnInit {
                             this.existePrueba1 = true;
                         }
                         if (response.body.prueba2) {
-                            //this.prueba2Bd = response.body.prueba2;
+                            this.prueba2Bd = response.body.prueba2;
                             this.existePrueba2 = true;
                         }
                         if (response.body.prueba3) {
@@ -104,11 +111,11 @@ export class LandingComponent implements OnInit {
                             this.existePrueba5 = true;
                         }
                         buenas += this.prueba1Bd.buenas;
-                        //buenas += this.prueba2Bd.buenas;
+                        buenas += this.prueba2Bd.buenas;
                         buenas += this.prueba3Bd.buenas;
                         buenas += this.prueba4Bd.buenas;
                         buenas += this.prueba5Bd.buenas;
-                        let porcentaje = (buenas / 262) * 100;
+                        let porcentaje = (buenas / 346) * 100;
                         if (porcentaje > 0 && porcentaje <= 25) {
                             this.rutaImagen = 'assets/img/reloj1.png';
                         } else {

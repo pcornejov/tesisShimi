@@ -140,6 +140,8 @@ public class Prueba5 extends ModelCore{
 	@ModelField
 	public String pregunta8;
 	@ModelField
+	public String pregunta9;
+	@ModelField
 	public String pregunta10;
 	@ModelField
 	public String pregunta11;

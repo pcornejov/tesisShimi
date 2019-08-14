@@ -40,6 +40,7 @@ export class Prueba3Component {
     private pregunta23: string;
     private pregunta24: string;
     private pregunta25: string;
+    private pregunta26: string;
     private vyf1: string;
     private vyf2: string;
     private vyf3: string;
@@ -102,6 +103,7 @@ export class Prueba3Component {
         this.pregunta23 = '';
         this.pregunta24 = '';
         this.pregunta25 = '';
+        this.pregunta26 = '';
         this.vyf1 = '';
         this.vyf2 = '';
         this.vyf3 = '';
@@ -162,6 +164,7 @@ export class Prueba3Component {
         this.prueba3.pregunta23 = this.pregunta23;
         this.prueba3.pregunta24 = this.pregunta24;
         this.prueba3.pregunta25 = this.pregunta25;
+        this.prueba3.pregunta26 = this.pregunta26;
         this.prueba3.vyf1 = this.vyf1;
         this.prueba3.vyf2 = this.vyf2;
         this.prueba3.vyf3 = this.vyf3;

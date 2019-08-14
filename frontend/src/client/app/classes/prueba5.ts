@@ -63,6 +63,7 @@ export class Prueba5 {
     pregunta6: string;
     pregunta7: string;
     pregunta8: string;
+    pregunta9: string;
     pregunta10: string;
     pregunta11: string;
     pregunta12: string;

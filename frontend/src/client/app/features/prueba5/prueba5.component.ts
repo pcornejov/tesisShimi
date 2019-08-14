@@ -59,6 +59,7 @@ export class Prueba5Component {
     private pregunta6: string;
     private pregunta7: string;
     private pregunta8: string;
+    private pregunta9: string;
     private pregunta10: string;
     private pregunta11: string;
     private pregunta12: string;
@@ -114,6 +115,7 @@ export class Prueba5Component {
         this.pregunta6 = '';
         this.pregunta7 = '';
         this.pregunta8 = '';
+        this.pregunta9 = '';
         this.pregunta10 = '';
         this.pregunta11 = '';
         this.pregunta12 = '';
@@ -202,6 +204,7 @@ export class Prueba5Component {
         this.prueba5.pregunta6 = this.pregunta6;
         this.prueba5.pregunta7 = this.pregunta7;
         this.prueba5.pregunta8 = this.pregunta8;
+        this.prueba5.pregunta9 = this.pregunta9;
         this.prueba5.pregunta10 = this.pregunta10;
         this.prueba5.pregunta11 = this.pregunta11;
         this.prueba5.pregunta12 = this.pregunta12;

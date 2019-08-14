@@ -73,12 +73,12 @@ public class SampleController extends ControllerCore {
 		String rut = req.getParam("rut");
 		JSONObject resultado = new JSONObject();
 		Prueba1 prueba1 = new Prueba1();
-		//Prueba2 prueba2 = new Prueba2();
+		Prueba2 prueba2 = new Prueba2();
 		Prueba3 prueba3 = new Prueba3();
 		Prueba4 prueba4 = new Prueba4();
 		Prueba5 prueba5 = new Prueba5();
 		prueba1.rut = rut;
-		//prueba2.rut = rut;
+		prueba2.rut = rut;
 		prueba3.rut = rut;
 		prueba4.rut = rut;
 		prueba5.rut = rut;
@@ -87,9 +87,9 @@ public class SampleController extends ControllerCore {
 			log.Info(prueba1.toString());
 			resultado.put("prueba1", prueba1.find().getOneJSON());
 		}
-		// if(prueba2.find().getOneJSON().length() > 0) {
-		// 	resultado.put("prueba2", prueba2.find().getOneJSON());
-		// }
+		if(prueba2.find().getOneJSON().length() > 0) {
+			resultado.put("prueba2", prueba2.find().getOneJSON());
+		}
 		if(prueba3.find().getOneJSON().length() > 0) {
 			log.Info("obtuve prueba 3");
 			log.Info(prueba3.toString());
@@ -201,7 +201,108 @@ public class SampleController extends ControllerCore {
 	@POST
 	public static void insertaPrueba2(HttpRequest req, HttpResponse res) {
 		log.Info(req.getParams().toString());
+		JSONObject parametros = req.getParams();
 		Prueba2 prueba2 = new Prueba2();
+		prueba2.rut = parametros.getString("rut");
+		prueba2.primeraPartePregunta1 = parametros.getString("primeraPartePregunta1");
+		prueba2.primeraPartePregunta2 = parametros.getString("primeraPartePregunta2");
+		prueba2.primeraPartePregunta3 = parametros.getString("primeraPartePregunta3");
+		prueba2.primeraPartePregunta4 = parametros.getString("primeraPartePregunta4");
+		prueba2.primeraPartePregunta5 = parametros.getString("primeraPartePregunta5");
+		prueba2.primeraPartePregunta6 = parametros.getString("primeraPartePregunta6");
+		prueba2.primeraPartePregunta7 = parametros.getString("primeraPartePregunta7");
+		prueba2.primeraPartePregunta8 = parametros.getString("primeraPartePregunta8");
+		prueba2.primeraPartePregunta9 = parametros.getString("primeraPartePregunta9");
+		prueba2.primeraPartePregunta10 = parametros.getString("primeraPartePregunta10");
+		prueba2.primeraPartePregunta11 = parametros.getString("primeraPartePregunta11");
+		prueba2.primeraPartePregunta12 = parametros.getString("primeraPartePregunta12");
+		prueba2.primeraPartePregunta13 = parametros.getString("primeraPartePregunta13");
+		prueba2.primeraPartePregunta14 = parametros.getString("primeraPartePregunta14");
+		prueba2.primeraPartePregunta15 = parametros.getString("primeraPartePregunta15");
+		prueba2.primeraPartePregunta16 = parametros.getString("primeraPartePregunta16");
+		prueba2.primeraPartePregunta17 = parametros.getString("primeraPartePregunta17");
+		prueba2.primeraPartePregunta18 = parametros.getString("primeraPartePregunta18");
+		prueba2.primeraPartePregunta19 = parametros.getString("primeraPartePregunta19");
+		prueba2.primeraPartePregunta20 = parametros.getString("primeraPartePregunta20");
+		prueba2.primeraPartePregunta21 = parametros.getString("primeraPartePregunta21");
+		prueba2.primeraPartePregunta22 = parametros.getString("primeraPartePregunta22");
+		prueba2.primeraPartePregunta23 = parametros.getString("primeraPartePregunta23");
+		prueba2.vyf1 = parametros.getString("vyf1");
+		prueba2.vyf2 = parametros.getString("vyf2");
+		prueba2.vyf3 = parametros.getString("vyf3");
+		prueba2.vyf4 = parametros.getString("vyf4");
+		prueba2.vyf5 = parametros.getString("vyf5");
+		prueba2.vyf6 = parametros.getString("vyf6");
+		prueba2.vyf7 = parametros.getString("vyf7");
+		prueba2.vyf8 = parametros.getString("vyf8");
+		prueba2.vyf11 = parametros.getString("vyf11");
+		prueba2.vyf12 = parametros.getString("vyf12");
+		prueba2.vyf13 = parametros.getString("vyf13");
+		prueba2.vyf14 = parametros.getString("vyf14");
+		prueba2.vyf15 = parametros.getString("vyf15");
+		prueba2.selector1 = parametros.getString("selector1");
+		prueba2.selector2 = parametros.getString("selector2");
+		prueba2.selector3 = parametros.getString("selector3");
+		prueba2.selector4 = parametros.getString("selector4");
+		prueba2.selector5 = parametros.getString("selector5");
+		prueba2.selector6 = parametros.getString("selector6");
+		prueba2.selector7 = parametros.getString("selector7");
+		prueba2.selector8 = parametros.getString("selector8");
+		prueba2.selector9 = parametros.getString("selector9");
+		prueba2.selector10 = parametros.getString("selector10");
+		prueba2.selector11 = parametros.getString("selector11");
+		prueba2.selector12 = parametros.getString("selector12");
+		prueba2.selector13 = parametros.getString("selector13");
+		prueba2.selector14 = parametros.getString("selector14");
+		prueba2.selector15 = parametros.getString("selector15");
+		prueba2.selector16 = parametros.getString("selector16");
+		prueba2.selector17 = parametros.getString("selector17");
+		prueba2.selector18 = parametros.getString("selector18");
+		prueba2.selector19 = parametros.getString("selector19");
+		prueba2.selector20 = parametros.getString("selector20");
+		prueba2.selector21 = parametros.getString("selector21");
+		prueba2.selector22 = parametros.getString("selector22");
+		prueba2.selector23 = parametros.getString("selector23");
+		prueba2.selector24 = parametros.getString("selector24");
+		prueba2.selector25 = parametros.getString("selector25");
+		prueba2.selector26 = parametros.getString("selector26");
+		prueba2.selector27 = parametros.getString("selector27");
+		prueba2.selector28 = parametros.getString("selector28");
+		prueba2.selector29 = parametros.getString("selector29");
+		prueba2.selector30 = parametros.getString("selector30");
+		prueba2.selector31 = parametros.getString("selector31");
+		prueba2.selector32 = parametros.getString("selector32");
+		prueba2.selector33 = parametros.getString("selector33");
+		prueba2.selector34 = parametros.getString("selector34");
+		prueba2.selector35 = parametros.getString("selector35");
+		prueba2.segundaPartePregunta1 = parametros.getString("segundaPartePregunta1");
+		prueba2.segundaPartePregunta2 = parametros.getString("segundaPartePregunta2");
+		prueba2.segundaPartePregunta3 = parametros.getString("segundaPartePregunta3");
+		prueba2.segundaPartePregunta4 = parametros.getString("segundaPartePregunta4");
+		prueba2.segundaPartePregunta5 = parametros.getString("segundaPartePregunta5");
+		prueba2.segundaPartePregunta6 = parametros.getString("segundaPartePregunta6");
+		prueba2.segundaPartePregunta7 = parametros.getString("segundaPartePregunta7");
+		prueba2.segundaPartePregunta8 = parametros.getString("segundaPartePregunta8");
+		prueba2.segundaPartePregunta9 = parametros.getString("segundaPartePregunta9");
+		prueba2.segundaPartePregunta10 = parametros.getString("segundaPartePregunta10");
+		prueba2.segundaPartePregunta12 = parametros.getString("segundaPartePregunta12");
+		prueba2.segundaPartePregunta13 = parametros.getString("segundaPartePregunta13");
+		prueba2.segundaPartePregunta14 = parametros.getString("segundaPartePregunta14");
+		prueba2.segundaPartePregunta15 = parametros.getString("segundaPartePregunta15");
+		prueba2.segundaPartePregunta16 = parametros.getString("segundaPartePregunta16");
+		prueba2.segundaPartePregunta17 = parametros.getString("segundaPartePregunta17");
+		prueba2.segundaPartePregunta18 = parametros.getString("segundaPartePregunta18");
+		prueba2.segundaPartePregunta19 = parametros.getString("segundaPartePregunta19");
+		prueba2.segundaPartePregunta20 = parametros.getString("segundaPartePregunta20");
+		prueba2.segundaPartePregunta21 = parametros.getString("segundaPartePregunta21");
+		prueba2.segundaPartePregunta22 = parametros.getString("segundaPartePregunta22");
+		prueba2.segundaParteSelector1 = parametros.getString("segundaParteSelector1");
+		prueba2.segundaParteSelector2 = parametros.getString("segundaParteSelector2");
+		prueba2.segundaParteSelector3 = parametros.getString("segundaParteSelector3");
+		prueba2.segundaParteSelector4 = parametros.getString("segundaParteSelector4");
+		prueba2.tiempo = parametros.getInt("tiempo");
+		prueba2.buenas = revisaPrueba2(prueba2);
+		prueba2.insert();
 		return;
 	}
 
@@ -238,6 +339,7 @@ public class SampleController extends ControllerCore {
 		prueba3.pregunta23 = parametros.getString("pregunta23");
 		prueba3.pregunta24 = parametros.getString("pregunta24");
 		prueba3.pregunta25 = parametros.getString("pregunta25");
+		prueba3.pregunta26 = parametros.getString("pregunta26");
 		prueba3.vyf1 = parametros.getString("vyf1");
 		prueba3.vyf2 = parametros.getString("vyf2");
 		prueba3.vyf3 = parametros.getString("vyf3");
@@ -262,6 +364,14 @@ public class SampleController extends ControllerCore {
 		prueba3.vyf22 = parametros.getString("vyf22");
 		prueba3.vyf23 = parametros.getString("vyf23");
 		prueba3.vyf24 = parametros.getString("vyf24");
+		prueba3.selector1 = parametros.getString("selector1");
+		prueba3.selector2 = parametros.getString("selector2");
+		prueba3.selector3 = parametros.getString("selector3");
+		prueba3.selector4 = parametros.getString("selector4");
+		prueba3.selector5 = parametros.getString("selector5");
+		prueba3.selector6 = parametros.getString("selector6");
+		prueba3.selector7 = parametros.getString("selector7");
+		prueba3.selector8 = parametros.getString("selector8");
 		prueba3.buenas = revisaPrueba3(prueba3);
 		prueba3.tiempo = parametros.getInt("tiempo");
 		prueba3.insert();
@@ -276,13 +386,13 @@ public class SampleController extends ControllerCore {
 		JSONObject parametros = req.getParams();
 		Prueba4 prueba4 = new Prueba4();
 		prueba4.rut = parametros.getString("rut");
-		prueba4.pregunta1 = parametros.getString("pregunta1");
+		prueba4.pregunta2 = parametros.getString("pregunta2");
 		prueba4.pregunta3 = parametros.getString("pregunta3");
 		prueba4.pregunta4 = parametros.getString("pregunta4");
 		prueba4.pregunta5 = parametros.getString("pregunta5");
 		prueba4.pregunta6 = parametros.getString("pregunta6");
 		prueba4.pregunta7 = parametros.getString("pregunta7");
-		prueba4.pregunta8 = parametros.getString("pregunta8");
+		prueba4.pregunta9 = parametros.getString("pregunta9");
 		prueba4.pregunta10 = parametros.getString("pregunta10");
 		prueba4.pregunta11 = parametros.getString("pregunta11");
 		prueba4.pregunta12 = parametros.getString("pregunta12");
@@ -297,7 +407,6 @@ public class SampleController extends ControllerCore {
 		prueba4.pregunta22 = parametros.getString("pregunta22");
 		prueba4.pregunta23 = parametros.getString("pregunta23");
 		prueba4.pregunta24 = parametros.getString("pregunta24");
-		prueba4.pregunta25 = parametros.getString("pregunta25");
 		prueba4.pregunta26 = parametros.getString("pregunta26");
 		prueba4.pregunta27 = parametros.getString("pregunta27");
 		prueba4.pregunta28 = parametros.getString("pregunta28");
@@ -316,10 +425,6 @@ public class SampleController extends ControllerCore {
 		prueba4.vyf4 = parametros.getString("vyf4");
 		prueba4.vyf5 = parametros.getString("vyf5");
 		prueba4.vyf6 = parametros.getString("vyf6");
-		prueba4.vyf7 = parametros.getString("vyf7");
-		prueba4.vyf8 = parametros.getString("vyf8");
-		prueba4.vyf9 = parametros.getString("vyf9");
-		prueba4.vyf10 = parametros.getString("vyf10");
 		prueba4.buenas = revisaPrueba4(prueba4);
 		prueba4.tiempo = parametros.getInt("tiempo");
 		prueba4.insert();
@@ -398,6 +503,7 @@ public class SampleController extends ControllerCore {
 		prueba5.pregunta6 = parametros.getString("pregunta6");
 		prueba5.pregunta7 = parametros.getString("pregunta7");
 		prueba5.pregunta8 = parametros.getString("pregunta8");
+		prueba5.pregunta9 = parametros.getString("pregunta9");
 		prueba5.pregunta10 = parametros.getString("pregunta10");
 		prueba5.pregunta11 = parametros.getString("pregunta11");
 		prueba5.pregunta12 = parametros.getString("pregunta12");
@@ -581,7 +687,7 @@ public class SampleController extends ControllerCore {
 		if(prueba1.riesgo8.equalsIgnoreCase("Riesgo Operacional")) {
 			buenas++;
 		}
-		if(prueba1.pregunta19.equalsIgnoreCase("Riesgo Operacional")) {
+		if(prueba1.pregunta19.equalsIgnoreCase("d")) {
 			buenas++;
 		}
 		if(prueba1.finanzasSelect1.equalsIgnoreCase("PIB")) {
@@ -650,6 +756,298 @@ public class SampleController extends ControllerCore {
 		return buenas;
 	}
 
+	private static Integer revisaPrueba2(Prueba2 prueba2) {
+		int buenas = 0;
+		if(prueba2.vyf1.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf2.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf3.equalsIgnoreCase("f")) {
+			buenas++;
+		}
+		if(prueba2.vyf4.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf5.equalsIgnoreCase("f")) {
+			buenas++;
+		}
+		if(prueba2.vyf6.equalsIgnoreCase("f")) {
+			buenas++;
+		}
+		if(prueba2.vyf7.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf8.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf11.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf12.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.vyf13.equalsIgnoreCase("f")) {
+			buenas++;
+		}
+		if(prueba2.vyf14.equalsIgnoreCase("f")) {
+			buenas++;
+		}
+		if(prueba2.vyf15.equalsIgnoreCase("v")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta1.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta2.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta3.equalsIgnoreCase("c")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta4.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta5.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta6.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta7.equalsIgnoreCase("a")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta8.equalsIgnoreCase("c")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta9.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta10.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta11.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta12.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta13.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta14.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta15.equalsIgnoreCase("a")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta16.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta17.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta18.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta19.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta20.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta21.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta22.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.primeraPartePregunta23.equalsIgnoreCase("a")) {
+			buenas++;
+		}
+		if(prueba2.selector1.equalsIgnoreCase("Etapa 1: Tareas Preparatorias")) {
+			buenas++;
+		}
+		if(prueba2.selector2.equalsIgnoreCase("Etapa 3: Análisis de Situación")) {
+			buenas++;
+		}
+		if(prueba2.selector3.equalsIgnoreCase("Etapa 4: Etapa Propositiva")) {
+			buenas++;
+		}
+		if(prueba2.selector4.equalsIgnoreCase("Etapa 1: Tareas Preparatorias")) {
+			buenas++;
+		}
+		if(prueba2.selector5.equalsIgnoreCase("Etapa 4: Etapa Propositiva")) {
+			buenas++;
+		}
+		if(prueba2.selector6.equalsIgnoreCase("Etapa 5: Etapa Ejecutiva")) {
+			buenas++;
+		}
+		if(prueba2.selector7.equalsIgnoreCase("Etapa 2: Etapa Fundacional")) {
+			buenas++;
+		}
+		if(prueba2.selector8.equalsIgnoreCase("Etapa 2: Etapa Fundacional")) {
+			buenas++;
+		}
+		if(prueba2.selector9.equalsIgnoreCase("Etapa 3: Análisis de Situación")) {
+			buenas++;
+		}
+		if(prueba2.selector10.equalsIgnoreCase("Etapa 3: Análisis de Situación")) {
+			buenas++;
+		}
+		if(prueba2.selector11.equalsIgnoreCase("Integración")) {
+			buenas++;
+		}
+		if(prueba2.selector12.equalsIgnoreCase("Organización")) {
+			buenas++;
+		}
+		if(prueba2.selector13.equalsIgnoreCase("Auditoria")) {
+			buenas++;
+		}
+		if(prueba2.selector14.equalsIgnoreCase("Retención")) {
+			buenas++;
+		}
+		if(prueba2.selector15.equalsIgnoreCase("Auditoria")) {
+			buenas++;
+		}
+		if(prueba2.selector16.equalsIgnoreCase("Organización")) {
+			buenas++;
+		}
+		if(prueba2.selector17.equalsIgnoreCase("Integración")) {
+			buenas++;
+		}
+		if(prueba2.selector18.equalsIgnoreCase("Retención")) {
+			buenas++;
+		}
+		if(prueba2.selector19.equalsIgnoreCase("Desarrollo")) {
+			buenas++;
+		}
+		if(prueba2.selector20.equalsIgnoreCase("Desarrollo")) {
+			buenas++;
+		}
+		if(prueba2.selector21.equalsIgnoreCase("Departamentalización por territorio")) {
+			buenas++;
+		}
+		if(prueba2.selector22.equalsIgnoreCase("Departamentalización por equipos")) {
+			buenas++;
+		}
+		if(prueba2.selector23.equalsIgnoreCase("Departamentalización por tipo de cliente")) {
+			buenas++;
+		}
+		if(prueba2.selector24.equalsIgnoreCase("Departamentalización matricial")) {
+			buenas++;
+		}
+		if(prueba2.selector25.equalsIgnoreCase("Departamentalización por funciones")) {
+			buenas++;
+		}
+		if(prueba2.selector26.equalsIgnoreCase("Departamentalización por proyectos")) {
+			buenas++;
+		}
+		if(prueba2.selector27.equalsIgnoreCase("Departamentalización por tiempo")) {
+			buenas++;
+		}
+		if(prueba2.selector28.equalsIgnoreCase("Departamentalización por procesos")) {
+			buenas++;
+		}
+		if(prueba2.selector29.equalsIgnoreCase("Departamentalización por productos o servicios")) {
+			buenas++;
+		}
+		if(prueba2.selector30.equalsIgnoreCase("Por Pedidos")) {
+			buenas++;
+		}
+		if(prueba2.selector31.equalsIgnoreCase("Intermitente")) {
+			buenas++;
+		}
+		if(prueba2.selector32.equalsIgnoreCase("Por stock")) {
+			buenas++;
+		}
+		if(prueba2.selector33.equalsIgnoreCase("Mixto")) {
+			buenas++;
+		}
+		if(prueba2.selector34.equalsIgnoreCase("A destajo")) {
+			buenas++;
+		}
+		if(prueba2.selector35.equalsIgnoreCase("Continua")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta1.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta2.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta3.equalsIgnoreCase("a")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta4.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta5.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta6.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta7.equalsIgnoreCase("c")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta8.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta9.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta10.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta12.equalsIgnoreCase("b")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta13.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta14.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta15.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta16.equalsIgnoreCase("c")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta17.equalsIgnoreCase("e")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta18.equalsIgnoreCase("a")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta19.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta20.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta21.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaPartePregunta22.equalsIgnoreCase("d")) {
+			buenas++;
+		}
+		if(prueba2.segundaParteSelector1.equalsIgnoreCase("Sistema Estratégico")) {
+			buenas++;
+		}
+		if(prueba2.segundaParteSelector2.equalsIgnoreCase("Sistema Táctico")) {
+			buenas++;
+		}
+		if(prueba2.segundaParteSelector3.equalsIgnoreCase("Sistema Interinstitucional")) {
+			buenas++;
+		}
+		if(prueba2.segundaParteSelector4.equalsIgnoreCase("Sistema Operativo")) {
+			buenas++;
+		}
+		return buenas;
+	}
 	private static Integer revisaPrueba3(Prueba3 prueba3) {
 		int buenas = 0;
 		if(prueba3.pregunta1.equalsIgnoreCase("d")) {
@@ -700,28 +1098,28 @@ public class SampleController extends ControllerCore {
 		if(prueba3.pregunta10.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba3.vyf7.equalsIgnoreCase("v")) {
+		if(prueba3.vyf7.equalsIgnoreCase("f")) {
 			buenas++;
 		}
 		if(prueba3.vyf8.equalsIgnoreCase("f")) {
 			buenas++;
 		}
-		if(prueba3.vyf9.equalsIgnoreCase("f")) {
+		if(prueba3.vyf9.equalsIgnoreCase("v")) {
 			buenas++;
 		}
-		if(prueba3.vyf10.equalsIgnoreCase("v")) {
+		if(prueba3.vyf10.equalsIgnoreCase("f")) {
 			buenas++;
 		}
-		if(prueba3.vyf11.equalsIgnoreCase("f")) {
+		if(prueba3.vyf11.equalsIgnoreCase("v")) {
 			buenas++;
 		}
 		if(prueba3.vyf12.equalsIgnoreCase("v")) {
 			buenas++;
 		}
-		if(prueba3.vyf13.equalsIgnoreCase("v")) {
+		if(prueba3.vyf13.equalsIgnoreCase("f")) {
 			buenas++;
 		}
-		if(prueba3.vyf14.equalsIgnoreCase("f")) {
+		if(prueba3.vyf14.equalsIgnoreCase("v")) {
 			buenas++;
 		}
 		if(prueba3.vyf15.equalsIgnoreCase("v")) {
@@ -772,49 +1170,28 @@ public class SampleController extends ControllerCore {
 		if(prueba3.pregunta16.equalsIgnoreCase("e")) {
 			buenas++;
 		}
-		if(prueba3.pregunta17.equalsIgnoreCase("a")) {
+		if(prueba3.pregunta17.equalsIgnoreCase("e")) {
 			buenas++;
 		}
-		if(prueba3.pregunta18.equalsIgnoreCase("d")) {
+		if(prueba3.pregunta18.equalsIgnoreCase("a")) {
 			buenas++;
 		}
-		if(prueba3.pregunta19.equalsIgnoreCase("c")) {
+		if(prueba3.pregunta19.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba3.pregunta20.equalsIgnoreCase("a")) {
+		if(prueba3.pregunta20.equalsIgnoreCase("c")) {
 			buenas++;
 		}
-		if(prueba3.pregunta21.equalsIgnoreCase("c")) {
+		if(prueba3.pregunta21.equalsIgnoreCase("a")) {
 			buenas++;
 		}
-		if(prueba3.pregunta22.equalsIgnoreCase("b")) {
+		if(prueba3.pregunta22.equalsIgnoreCase("c")) {
 			buenas++;
 		}
-		if(prueba3.pregunta23.equalsIgnoreCase("c")) {
+		if(prueba3.pregunta23.equalsIgnoreCase("b")) {
 			buenas++;
 		}
-		if(prueba3.pregunta24.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
-			buenas++;
-		}
-		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
+		if(prueba3.pregunta24.equalsIgnoreCase("c")) {
 			buenas++;
 		}
 		if(prueba3.pregunta25.equalsIgnoreCase("e")) {
@@ -848,10 +1225,7 @@ public class SampleController extends ControllerCore {
 	}
 	private static Integer revisaPrueba4(Prueba4 prueba4) {
 		int buenas = 0;
-		if(prueba4.pregunta1.equalsIgnoreCase("c")) {
-			buenas++;
-		}
-		if(prueba4.vyf1.equalsIgnoreCase("f")) {
+		if(prueba4.vyf1.equalsIgnoreCase("v")) {
 			buenas++;
 		}
 		if(prueba4.vyf2.equalsIgnoreCase("v")) {
@@ -869,34 +1243,25 @@ public class SampleController extends ControllerCore {
 		if(prueba4.vyf6.equalsIgnoreCase("v")) {
 			buenas++;
 		}
-		if(prueba4.vyf7.equalsIgnoreCase("v")) {
-			buenas++;
-		}
-		if(prueba4.vyf8.equalsIgnoreCase("f")) {
-			buenas++;
-		}
-		if(prueba4.vyf9.equalsIgnoreCase("f")) {
-			buenas++;
-		}
-		if(prueba4.vyf10.equalsIgnoreCase("v")) {
+		if(prueba4.pregunta2.equalsIgnoreCase("e")) {
 			buenas++;
 		}
 		if(prueba4.pregunta3.equalsIgnoreCase("e")) {
 			buenas++;
 		}
-		if(prueba4.pregunta4.equalsIgnoreCase("e")) {
+		if(prueba4.pregunta4.equalsIgnoreCase("d")) {
 			buenas++;
 		}
 		if(prueba4.pregunta5.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba4.pregunta6.equalsIgnoreCase("d")) {
+		if(prueba4.pregunta6.equalsIgnoreCase("c")) {
 			buenas++;
 		}
 		if(prueba4.pregunta7.equalsIgnoreCase("c")) {
 			buenas++;
 		}
-		if(prueba4.pregunta8.equalsIgnoreCase("c")) {
+		if(prueba4.pregunta9.equalsIgnoreCase("b")) {
 			buenas++;
 		}
 		if(prueba4.riesgo1.equalsIgnoreCase("Riesgo de Control")){
@@ -908,52 +1273,60 @@ public class SampleController extends ControllerCore {
 		if(prueba4.riesgo3.equalsIgnoreCase("Riesgo Inherente")){
 			buenas++;
 		}
-		if(prueba4.pregunta10.equalsIgnoreCase("b")) {
+		if(prueba4.pregunta10.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba4.pregunta11.equalsIgnoreCase("d")) {
+		if(prueba4.pregunta11.equalsIgnoreCase("c")) {
 			buenas++;
 		}
 		if(prueba4.pregunta12.equalsIgnoreCase("e")) {
 			buenas++;
 		}
-		if(prueba4.pregunta13.equalsIgnoreCase("c")) {
+		if(prueba4.pregunta13.equalsIgnoreCase("a")) {
 			buenas++;
 		}
-		if(prueba4.pregunta14.equalsIgnoreCase("e")) {
+		if(prueba4.pregunta14.equalsIgnoreCase("a")) {
 			buenas++;
 		}
-		if(prueba4.pregunta15.equalsIgnoreCase("a")) {
+		if(prueba4.pregunta15.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba4.pregunta16.equalsIgnoreCase("a")) {
+		if(prueba4.pregunta16.equalsIgnoreCase("e")) {
 			buenas++;
 		}
-		if(prueba4.pregunta17.equalsIgnoreCase("a")) {
+		if(prueba4.pregunta17.equalsIgnoreCase("e")) {
 			buenas++;
 		}
 		if(prueba4.pregunta18.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba4.pregunta20.equalsIgnoreCase("e")) {
+		if(prueba4.pregunta26.equalsIgnoreCase("d")) {
 			buenas++;
 		}
-		if(prueba4.pregunta21.equalsIgnoreCase("b")) {
+		if(prueba4.pregunta27.equalsIgnoreCase("a")) {
 			buenas++;
 		}
-		if(prueba4.pregunta22.equalsIgnoreCase("c")) {
+		if(prueba4.pregunta28.equalsIgnoreCase("b")) {
 			buenas++;
 		}
-		if(prueba4.pregunta23.equalsIgnoreCase("b")) {
+		if(prueba4.pregunta29.equalsIgnoreCase("a")) {
 			buenas++;
 		}
-		if(prueba4.pregunta24.equalsIgnoreCase("c")) {
+		if(prueba4.etica1.equalsIgnoreCase("No acepta.")) {
 			buenas++;
 		}
-		if(prueba4.pregunta25.equalsIgnoreCase("a")) {
+		if(prueba4.etica2.equalsIgnoreCase("No acepta.")) {
 			buenas++;
 		}
-		//falta lo de etica
+		if(prueba4.etica3.equalsIgnoreCase("Acepta")) {
+			buenas++;
+		}
+		if(prueba4.etica4.equalsIgnoreCase("Acepta")) {
+			buenas++;
+		}
+		if(prueba4.etica5.equalsIgnoreCase("No acepta")) {
+			buenas++;
+		}
 		return buenas;
 	}
 
@@ -1022,9 +1395,6 @@ public class SampleController extends ControllerCore {
 		if(prueba5.selector21.equalsIgnoreCase("Pasivo")) {
 			buenas++;
 		}
-		if(prueba5.selector21.equalsIgnoreCase("Pasivo")) {
-			buenas++;
-		}
 		if(prueba5.pregunta2.equalsIgnoreCase("a")) {
 			buenas++;
 		}
@@ -1041,6 +1411,9 @@ public class SampleController extends ControllerCore {
 			buenas++;
 		}
 		if(prueba5.pregunta8.equalsIgnoreCase("a")) {
+			buenas++;
+		}
+		if(prueba5.pregunta9.equalsIgnoreCase("e")) {
 			buenas++;
 		}
 		if(prueba5.pregunta10.equalsIgnoreCase("c")) {
@@ -1061,7 +1434,7 @@ public class SampleController extends ControllerCore {
 		if(prueba5.vyf5.equalsIgnoreCase("f")) {
 			buenas++;
 		}
-		if(prueba5.vyf6.equalsIgnoreCase("f")) {
+		if(prueba5.vyf6.equalsIgnoreCase("v")) {
 			buenas++;
 		}
 		if(prueba5.vyf7.equalsIgnoreCase("v")) {
@@ -1073,7 +1446,7 @@ public class SampleController extends ControllerCore {
 		if(prueba5.vyf9.equalsIgnoreCase("f")) {
 			buenas++;
 		}
-		if(prueba5.vyf10.equalsIgnoreCase("c")) {
+		if(prueba5.vyf10.equalsIgnoreCase("v")) {
 			buenas++;
 		}
 		if(prueba5.selector22.equalsIgnoreCase("Flujo Operacional")) {

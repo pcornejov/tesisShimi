@@ -16,13 +16,13 @@ import { tap } from 'rxjs/operators/tap';
     styleUrls: ['prueba4.component.css'],
 })
 export class Prueba4Component {
-    private pregunta1: string;
+    private pregunta2: string;
     private pregunta3: string;
     private pregunta4: string;
     private pregunta5: string;
     private pregunta6: string;
     private pregunta7: string;
-    private pregunta8: string;
+    private pregunta9: string;
     private pregunta10: string;
     private pregunta11: string;
     private pregunta12: string;
@@ -37,7 +37,6 @@ export class Prueba4Component {
     private pregunta22: string;
     private pregunta23: string;
     private pregunta24: string;
-    private pregunta25: string;
     private pregunta26: string;
     private pregunta27: string;
     private pregunta28: string;
@@ -56,22 +55,18 @@ export class Prueba4Component {
     private vyf4: string;
     private vyf5: string;
     private vyf6: string;
-    private vyf7: string;
-    private vyf8: string;
-    private vyf9: string;
-    private vyf10: string;
     private prueba4: Prueba4;
     private tiempoInicio: any = performance.now();
     private tiempoFin: any;
     constructor(private rest: RestService, private router: Router, private servicioRut: ServicioRutService) {
         this.prueba4 = new Prueba4();
-        this.pregunta1 = '';
+        this.pregunta2 = '';
         this.pregunta3 = '';
         this.pregunta4 = '';
         this.pregunta5 = '';
         this.pregunta6 = '';
         this.pregunta7 = '';
-        this.pregunta8 = '';
+        this.pregunta9 = '';
         this.pregunta10 = '';
         this.pregunta11 = '';
         this.pregunta12 = '';
@@ -86,7 +81,7 @@ export class Prueba4Component {
         this.pregunta22 = '';
         this.pregunta23 = '';
         this.pregunta24 = '';
-        this.pregunta25 = '';
+        this.pregunta26 = '';
         this.pregunta26 = '';
         this.pregunta27 = '';
         this.pregunta28 = '';
@@ -105,20 +100,16 @@ export class Prueba4Component {
         this.vyf4 = '';
         this.vyf5 = '';
         this.vyf6 = '';
-        this.vyf7 = '';
-        this.vyf8 = '';
-        this.vyf9 = '';
-        this.vyf10 = '';
     }
 
     public finalizar() {
-        this.prueba4.pregunta1 = this.pregunta1;
+        this.prueba4.pregunta2 = this.pregunta2;
         this.prueba4.pregunta3 = this.pregunta3;
         this.prueba4.pregunta4 = this.pregunta4;
         this.prueba4.pregunta5 = this.pregunta5;
         this.prueba4.pregunta6 = this.pregunta6;
         this.prueba4.pregunta7 = this.pregunta7;
-        this.prueba4.pregunta8 = this.pregunta8;
+        this.prueba4.pregunta9 = this.pregunta9;
         this.prueba4.pregunta10 = this.pregunta10;
         this.prueba4.pregunta11 = this.pregunta11;
         this.prueba4.pregunta12 = this.pregunta12;
@@ -133,7 +124,6 @@ export class Prueba4Component {
         this.prueba4.pregunta22 = this.pregunta22;
         this.prueba4.pregunta23 = this.pregunta23;
         this.prueba4.pregunta24 = this.pregunta24;
-        this.prueba4.pregunta25 = this.pregunta25;
         this.prueba4.pregunta26 = this.pregunta26;
         this.prueba4.pregunta27 = this.pregunta27;
         this.prueba4.pregunta28 = this.pregunta28;
@@ -152,11 +142,6 @@ export class Prueba4Component {
         this.prueba4.vyf4 = this.vyf4;
         this.prueba4.vyf5 = this.vyf5;
         this.prueba4.vyf6 = this.vyf6;
-        this.prueba4.vyf7 = this.vyf7;
-        this.prueba4.vyf8 = this.vyf8;
-        this.prueba4.vyf9 = this.vyf9;
-        this.prueba4.vyf10 = this.vyf10;
-        console.log(this.prueba4);
         this.prueba4.rut = this.servicioRut.getRutPerfil().rut;
         this.agregaPrueba().subscribe((response: HttpResponse<any>) => {
         });

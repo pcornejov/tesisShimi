@@ -24,6 +24,7 @@ export class Prueba3 {
     pregunta23: string;
     pregunta24: string;
     pregunta25: string;
+    pregunta26: string;
     vyf1: string;
     vyf2: string;
     vyf3: string;

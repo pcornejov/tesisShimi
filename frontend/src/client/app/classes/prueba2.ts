@@ -7,8 +7,6 @@ export class Prueba2 {
     vyf6: string;
     vyf7: string;
     vyf8: string;
-    vyf9: string;
-    vyf10: string;
     vyf11: string;
     vyf12: string;
     vyf13: string;

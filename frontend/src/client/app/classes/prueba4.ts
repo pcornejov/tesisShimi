@@ -1,11 +1,11 @@
 export class Prueba4 {
-    pregunta1: string;
+    pregunta2: string;
     pregunta3: string;
     pregunta4: string;
     pregunta5: string;
     pregunta6: string;
     pregunta7: string;
-    pregunta8: string;
+    pregunta9: string;
     pregunta10: string;
     pregunta11: string;
     pregunta12: string;
@@ -20,7 +20,6 @@ export class Prueba4 {
     pregunta22: string;
     pregunta23: string;
     pregunta24: string;
-    pregunta25: string;
     pregunta26: string;
     pregunta27: string;
     pregunta28: string;
@@ -36,10 +35,6 @@ export class Prueba4 {
     vyf4: string;
     vyf5: string;
     vyf6: string;
-    vyf7: string;
-    vyf8: string;
-    vyf9: string;
-    vyf10: string;
     riesgo1: string;
     riesgo2: string;
     riesgo3: string;

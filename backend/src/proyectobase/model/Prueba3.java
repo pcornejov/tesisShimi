@@ -62,6 +62,8 @@ public class Prueba3 extends ModelCore{
     @ModelField
     public String pregunta25;
     @ModelField
+    public String pregunta26;
+    @ModelField
     public String vyf1;
     @ModelField
     public String vyf2;
