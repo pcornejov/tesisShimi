@@ -78,7 +78,7 @@
     "@types/selenium-webdriver": "^3.0.7",
     "@types/systemjs": "^0.20.5",
     "@types/yargs": "^8.0.2",
-    "async": "^2.1.1",
+    "async": "^2.6.4",
     "autoprefixer": "^7.1.5",
     "browser-sync": "^2.18.13",
     "codelyzer": "^4.0.1",
